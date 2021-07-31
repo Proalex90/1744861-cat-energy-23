@@ -1,4 +1,3 @@
-
 .heading {
   margin: 0 auto;
   color: $color-textw;
@@ -16,8 +15,13 @@
   line-height: 36px;
   font-weight: 400;
   text-transform: none;
-  width: 250px;
   margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.heading__button-block {
+  padding: 0 20px;
+  align-items: center;
 }
 
 .heading__button {

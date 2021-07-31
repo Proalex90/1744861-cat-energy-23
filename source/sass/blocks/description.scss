@@ -1,4 +1,9 @@
+.description {
+  padding: 20px;
+}
+
 .description__title {
+  text-transform: none;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
@@ -7,7 +12,7 @@
 .description__item {
   display: flex;
   align-items: center;
-  padding: 20px 20px 20px 0;
+  padding-top: 20px;
 }
 
 .description__text {
