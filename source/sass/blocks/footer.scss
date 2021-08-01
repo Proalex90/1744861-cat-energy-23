@@ -1,0 +1,32 @@
+.footer__logo {
+  padding: 20px;
+  text-align: center;
+}
+
+.footer__social {
+  padding: 0 20px;
+}
+
+.socials__list {
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.social__item {
+  margin-right: 10px;
+}
+
+.footer__copyright {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__link {
+  text-decoration: none;
+  color: $color-text;
+}

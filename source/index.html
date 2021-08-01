@@ -1,124 +1,198 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body>
-
-<header class="header">
-  <a class="logo" href=""><img class="logo__img" src="http://placehold.it/33x37" alt="Логотип в виде оранжевого бэт-кота" ></a>
-  <nav class="nav">
-    <ul class="nav__list">
-      <li class="nav__item">
-        <a href="" class="nav__link nav__link--current">Главная</a>
-      </li>
-      <li class="nav__item">
-        <a href="catalog.html" class="nav__link">Каталог продукции</a>
-      </li>
-      <li class="nav__item">
-        <a href="form.html" class="nav__link">Подбор программы</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-<main class="main">
-  <section class="heading">
-    <h1 class="heading__title">Функциональное
-      питание для котов</h1>
-    <p class="heading__slogan">Занялся собой? Займись котом!</p>
-  </section>
-  <section class="nutrition-program">
-    <h2 class="visually-hidden">Подбор программы питания для котов</h2>
-    <ul class="nutrition-program__list">
-      <li class="nutrition-program__item">
-        <img class="nutrition-program__img" src="http://placehold.it/50x53" alt="Изображение стройного кота" >
-        <h3 class="nutrition-program__subtitle">Похудение</h3>
-        <p class="nutrition-program__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-        <a href="#" class="nutrition-program__link">Каталог SLIM --></a>
-      </li>
-      <li class="nutrition-program__item">
-        <img class="nutrition-program__img" src="http://placehold.it/67x50" alt="Изображение пантеры" >
-        <h3 class="nutrition-program__subtitle">Набор массы</h3>
-        <p class="nutrition-program__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-        <a href="#" class="nutrition-program__link">Каталог PRO --></a>
-      </li>
-    </ul>
-  </section>
-  <section class="description">
-    <h2 class="visually-hidden">Как работает наше функциональное питание для котов</h2>
-    <p class="description__title">Как это работает</p>
-    <ul class="description__list">
-      <li class="description__item">
-        <img class="description__icon description__icon--leaf" src="http://placehold.it/60x60" alt="Иконка">
-        <p class="description__text">Функциональное питание
-          содержит только полезные
-          питательные вещества.</p>
-      </li>
-      <li class="description__item">
-        <img class="description__icon description__icon--powder" src="http://placehold.it/60x60" alt="Иконка">
-        <p class="description__text">Выпускается в виде порошка,
-          который нужно лишь залить
-          кипятком и готово.</p>
-      </li>
-      <li class="description__item">
-        <img class="description__icon description__icon--cutlery" src="http://placehold.it/60x60" alt="Иконка">
-        <p class="description__text">Замените один-два приема
-          обычной еды на наше
-          функциональное питание.</p>
-      </li>
-      <li class="description__item">
-        <img class="description__icon description__icon--time" src="http://placehold.it/60x60" alt="Иконка">
-        <p class="description__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+  <body class="page">
+    <header class="header">
+      <div class="header__wrapper">
+        <a class="logo" href=""
+          ><img
+            class="logo__img"
+            src="http://placehold.it/33x37"
+            alt="Логотип в виде оранжевого бэт-кота"
+        /></a>
+        <img src="http://placehold.it/110x18" alt="" class="logo2" />
+        <button class="menu__toggle">Меню</button>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="" class="nav__link nav__link--current">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="catalog.html" class="nav__link">Каталог продукции</a>
+          </li>
+          <li class="nav__item">
+            <a href="form.html" class="nav__link">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="heading">
+        <div class="heading__container">
+          <h1 class="heading__title">Функциональное питание для котов</h1>
+          <p class="heading__slogan">Занялся собой? Займись котом!</p>
+        </div>
+        <div class="heading__button-block">
+          <a href="form.html" class="heading__button">подобрать программу</a>
+        </div>
+      </section>
+      <section class="nutrition-program">
+        <h2 class="visually-hidden">Подбор программы питания для котов</h2>
+        <ul class="nutrition-program__list">
+          <li class="nutrition-program__item">
+            <img
+              class="nutrition-program__img"
+              src="http://placehold.it/50x53"
+              alt="Изображение стройного кота"
+            />
+            <h3 class="nutrition-program__subtitle">Похудение</h3>
+            <p class="nutrition-program__text">
+              Ваш кот весит больше собаки и почти утратил способность лазить по
+              деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
+              сбросить лишний вес.
+            </p>
+            <a href="#" class="nutrition-program__link">Каталог SLIM --></a>
+          </li>
+          <li class="nutrition-program__item">
+            <img
+              class="nutrition-program__img"
+              src="http://placehold.it/67x50"
+              alt="Изображение пантеры"
+            />
+            <h3 class="nutrition-program__subtitle">Набор массы</h3>
+            <p class="nutrition-program__text">
+              Заработать авторитет среди дворовых котов и даже собак? Серия Cat
+              Energy Pro поможет вашему коту нарастить необходимые мышцы!
+            </p>
+            <a href="#" class="nutrition-program__link">Каталог PRO --></a>
+          </li>
+        </ul>
+      </section>
+      <section class="description">
+        <h2 class="visually-hidden">
+          Как работает наше функциональное питание для котов
+        </h2>
+        <p class="description__title">Как это работает</p>
+        <ul class="description__list">
+          <li class="description__item">
+            <img
+              class="description__icon description__icon--leaf"
+              src="http://placehold.it/60x60"
+              alt="Иконка"
+            />
+            <p class="description__text">
+              Функциональное питание содержит только полезные питательные
+              вещества.
+            </p>
+          </li>
+          <li class="description__item">
+            <img
+              class="description__icon description__icon--powder"
+              src="http://placehold.it/60x60"
+              alt="Иконка"
+            />
+            <p class="description__text">
+              Выпускается в виде порошка, который нужно лишь залить кипятком и
+              готово.
+            </p>
+          </li>
+          <li class="description__item">
+            <img
+              class="description__icon description__icon--cutlery"
+              src="http://placehold.it/60x60"
+              alt="Иконка"
+            />
+            <p class="description__text">
+              Замените один-два приема обычной еды на наше функциональное
+              питание.
+            </p>
+          </li>
+          <li class="description__item">
+            <img
+              class="description__icon description__icon--time"
+              src="http://placehold.it/60x60"
+              alt="Иконка"
+            />
+            <p class="description__text">
+              Уже через месяц наслаждайтесь изменениями к лучшему вашего
+              питомца!
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="example">
+        <h2 class="visually-hidden">Реальный пример из отзывов клиентов</h2>
+        <p class="example__title">Живой пример</p>
+        <p class="example__text">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
+          Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
+          этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-      </li>
-    </ul>
-  </section>
-  <section class="example">
-    <h2 class="visually-hidden">Реальный пример из отзывов клиентов</h2>
-    <p class="example__title">Живой пример</p>
-    <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-    <div class="example__container results">
-      <p>5кг - снижение веса</p>
-      <p>60 дней - затрачено времени</p>
-    </div>
-    <p class="example__spending-text">Затраты на питание: 15 000 РУБ. </p>
-    <ul class="example__before-after-list">
-      <li class="example__before-after-item">
-        <img class="example__before-after-img" src="http://placehold.it/251x240" alt="Жирный кот =)">
-      </li>
-      <li class="example__before-after-item">
-        <img class="example__before-after-img" src="http://placehold.it/251x240" alt="Тощий кот">
-      </li>
-    </ul>
-    <button class="example__button example__button--before">Было</button>
-    <button class="example__button example__button--after">Стало</button>
-  </section>
-  <section class="cooperation">
-    <h3 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h3>
-    <P class="cooperation__text">ул. Большая
-      Конюшенная, д. 19/8
-      Санкт-Петербург</P>
-  </section>
-  <section class="map">
-    <h3 class="visually-hidden">Как нас найти</h3>
-    <img class="map__img" src="http://placehold.it/320x362" alt="Карта">
-  </section>
-</main>
-<footer class="footer">
-  <section class="footer__logo">
-    <h3 class="visually-hidden">Логотип нашей компании</h3>
-    <img class="" src="http://placehold.it/128x24" alt="Логотип компании">
-  </section>
-  <section class="footer__social">
-    <h3 class="visually-hidden">Мы в социальных сетях</h3>
-
-  </section>
-  <section class="footer__copyright copyright">
-    <h3 class="visually-hidden"></h3>
-    <a href="#" class="copyright__link">HTML Academy</a>
-    <img src="img/htmlacademy.svg" alt="" width="27" height="34">
-  </section>
-</footer>
+        <div class="example__container results">
+          <p>5кг - снижение веса</p>
+          <p>60 дней - затрачено времени</p>
+        </div>
+        <p class="example__spending-text">Затраты на питание: 15 000 РУБ.</p>
+        <ul class="example__before-after-list">
+          <li class="example__before-after-item">
+            <img
+              class="example__before-after-img"
+              src="http://placehold.it/251x240"
+              alt="Жирный кот =)"
+            />
+          </li>
+          <li class="example__before-after-item">
+            <img
+              class="example__before-after-img"
+              src="http://placehold.it/251x240"
+              alt="Тощий кот"
+            />
+          </li>
+        </ul>
+        <button class="example__button example__button--before">Было</button>
+        <button class="example__button example__button--after">Стало</button>
+      </section>
+      <section class="cooperation">
+        <h3 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h3>
+        <p class="cooperation__text">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </p>
+      </section>
+      <section class="map">
+        <h3 class="visually-hidden">Как нас найти</h3>
+        <img class="map__img" src="http://placehold.it/320x362" alt="Карта" />
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="footer__logo">
+        <h3 class="visually-hidden">Логотип нашей компании</h3>
+        <img class="" src="http://placehold.it/128x24" alt="Логотип компании" />
+      </section>
+      <section class="footer__social socials">
+        <h3 class="visually-hidden">Мы в социальных сетях</h3>
+        <ul class="socials__list">
+          <li class="social__item">
+            <a href="" class="social__link">VK</a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link">Инст</a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link">FB</a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer__copyright copyright">
+        <h3 class="visually-hidden">Наша академия</h3>
+        <a href="#" class="copyright__link">HTML Academy</a>
+        <img src="img/htmlacademy.svg" alt="" width="27" height="34" />
+      </section>
+    </footer>
   </body>
 </html>

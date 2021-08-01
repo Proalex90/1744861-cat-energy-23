@@ -1,0 +1,32 @@
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nav__list {
+  list-style: none;
+}
+
+.nav__item {
+  border-top: 1px solid $color-border;
+  height: 66px;
+  padding-top: 23px;
+
+  &:last-child {
+    border-bottom: 1px solid $color-border;
+  }
+}
+
+.nav__link {
+  text-decoration: none;
+  color: $color-text;
+  line-height: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}

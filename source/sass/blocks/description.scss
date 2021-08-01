@@ -1,0 +1,22 @@
+.description {
+  padding: 20px;
+}
+
+.description__title {
+  text-transform: none;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.description__item {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.description__text {
+  padding-left: 20px;
+  font-family: "Arial", sans-serif;
+  text-transform: none;
+}
