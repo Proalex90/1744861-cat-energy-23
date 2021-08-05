@@ -41,7 +41,7 @@
   padding: 15px;
   margin: 15px auto 0 10px;
   width: 100%;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
 }
 
 .form__taget {
@@ -55,6 +55,7 @@
 
 .taget__item {
   margin-bottom: 25px;
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -78,7 +79,6 @@
 .decoration-line {
   height: 2px;
   width: 100%;
-  margin-left: auto;
   background-color: #68b738;
   margin-left: 15px;
 }
@@ -109,9 +109,11 @@
   text-transform: uppercase;
   color: $color-form-text;
 }
+
 .form__comment,
 .form__other {
   border: none;
+
   .subtitle__container {
     align-items: center;
   }
@@ -168,7 +170,6 @@
   font-weight: 400;
   width: 100%;
   height: 40px;
-  line-height: 18px;
   color: #ffffff;
   background-color: #68b738;
   border: none;
@@ -179,5 +180,5 @@
   text-transform: none;
   text-align: center;
   line-height: 16px;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
 }
