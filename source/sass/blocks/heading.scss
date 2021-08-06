@@ -3,11 +3,22 @@
   color: $color-textw;
   min-height: 302px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
 }
 
 .heading__container {
-  height: 302px;
+  min-height: 302px;
   background-color: $basic-color;
+
+  @media (min-width: $tablet-width) {
+    background-color: $color-textw;
+    min-height: auto;
+    width: 54%;
+    padding-left: 117px;
+  }
 }
 
 .heading__title {
@@ -17,20 +28,48 @@
   text-transform: none;
   margin: 0 auto;
   padding: 30px 20px;
+
+  @media (min-width: $tablet-width) {
+    color: $color-text;
+    font-size: 60px;
+    line-height: 60px;
+    padding: 30px 0;
+    margin-bottom: 40px;
+  }
+}
+
+.heading__slogan {
+  @media (min-width: $tablet-width) {
+    color: $color-text;
+  }
 }
 
 .heading__button-block {
   padding: 0 20px;
-  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-left: 117px;
+  }
 }
 
 .heading__button {
-  margin-top: 138px;
-  display: block;
+  margin: 138px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 40px;
+  min-height: 40px;
   text-decoration: none;
   line-height: 18px;
   color: $color-textw;
   background-color: $basic-color;
+
+  @media (min-width: $tablet-width) {
+    margin: 50px 0 500px;
+    margin-top: 50px;
+    text-align: center;
+    width: 244px;
+    min-height: 54px;
+  }
 }

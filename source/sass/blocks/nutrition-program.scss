@@ -1,6 +1,10 @@
 .nutrition-program__list {
   list-style: none;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
 }
 
 .nutrition-program__item {
@@ -10,6 +14,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    padding: 55px;
+  }
 }
 
 .nutrition-program__subtitle {
@@ -18,10 +27,27 @@
   font-weight: 400;
   grid-column: 2/-1;
   padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1;
+    padding-left: 0;
+    margin-bottom: 25px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .nutrition-program__img {
   margin: 30px 0;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1/4;
+    grid-column: 2/-1;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .nutrition-program__text {
@@ -29,6 +55,13 @@
   text-transform: none;
   padding-bottom: 20px;
   grid-column: 1/-1;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1;
+    padding-bottom: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .nutrition-program__link {
@@ -40,4 +73,10 @@
   grid-column: 1/-1;
   font-size: 16px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

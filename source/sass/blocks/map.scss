@@ -1,3 +1,5 @@
-.map {
-  background-image: none;
+.map__img {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
