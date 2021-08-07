@@ -1,3 +1,8 @@
+.header {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
 
 .header__wrapper {
   display: flex;
@@ -7,10 +12,21 @@
 .nav {
   margin: 0 auto;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-left: 90px;
+    width: 100%;
+  }
 }
 
 .nav__list {
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .nav__item {
@@ -21,6 +37,14 @@
   &:last-child {
     border-bottom: 1px solid $color-border;
   }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
 }
 
 .nav__link {
@@ -29,4 +53,10 @@
   line-height: 20px;
   font-size: 20px;
   font-weight: 500;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
 }

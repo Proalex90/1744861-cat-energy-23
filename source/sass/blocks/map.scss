@@ -1,5 +1,11 @@
 .map__img {
+  width: 100%;
+  min-height: 320px;
+  background: url(../../img/location.jpg) no-repeat center;
+  background-size: cover;
+
   @media (min-width: $tablet-width) {
     width: 100%;
+    min-height: 400px;
   }
 }
