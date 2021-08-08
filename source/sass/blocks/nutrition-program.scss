@@ -9,6 +9,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     gap: 5%;
+    padding: 0 110px;
   }
 }
 
@@ -24,6 +25,13 @@
     grid-template-columns: 1fr 1fr;
     padding: 55px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
 }
 
 .nutrition-program__subtitle {
@@ -53,6 +61,14 @@
     width: 200px;
     height: 200px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-right: 60px;
+    width: 100px;
+    height: 100px;
+  }
+
 }
 
 .nutrition-program__text {
@@ -67,6 +83,12 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-top: 50px;
+  }
+
 }
 
 .nutrition-program__link {
