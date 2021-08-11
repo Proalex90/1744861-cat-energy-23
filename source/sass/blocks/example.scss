@@ -23,3 +23,18 @@
   font-family: "Arial", sans-serif;
   text-transform: none;
 }
+
+.example__container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.example__spending-text {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.example__slider {
+  margin: 0 auto;
+  text-align: center;
+}
