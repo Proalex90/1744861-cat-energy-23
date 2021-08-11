@@ -1,3 +1,10 @@
+.nutrition-program {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    max-width: $desktop-width;
+  }
+}
+
 .nutrition-program__list {
   list-style: none;
   padding: 0 20px;
@@ -31,7 +38,6 @@
     justify-content: flex-start;
     flex-wrap: wrap;
   }
-
 }
 
 .nutrition-program__subtitle {
@@ -68,7 +74,6 @@
     width: 100px;
     height: 100px;
   }
-
 }
 
 .nutrition-program__text {
@@ -88,7 +93,6 @@
     width: 100%;
     margin-top: 50px;
   }
-
 }
 
 .nutrition-program__link {

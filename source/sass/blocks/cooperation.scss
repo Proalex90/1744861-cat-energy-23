@@ -3,6 +3,12 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+
+  @media (min-width: $desktop-width) {
+    padding: 70px 110px;
+    margin: 0 auto;
+    max-width: $desktop-width;
+  }
 }
 
 .cooperation__title {

@@ -1,3 +1,20 @@
+.footer {
+  background-color: $basic-background;
+}
+
+.footer__content-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 70px 110px;
+    margin: 0 auto;
+    max-width: $desktop-width;
+  }
+}
+
 .footer__logo {
   padding: 20px;
   text-align: center;
@@ -13,6 +30,10 @@
   padding: 20px;
   display: flex;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .social__item {
