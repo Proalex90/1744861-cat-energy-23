@@ -253,6 +253,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
   @media (min-width: $desktop-width) {
     flex-wrap: nowrap;
     justify-content: space-between;

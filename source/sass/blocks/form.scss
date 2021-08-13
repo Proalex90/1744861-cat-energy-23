@@ -24,14 +24,11 @@
 }
 
 .main__form {
-
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
     max-width: 1440px;
   }
-
-
 }
 
 .form__name,
@@ -42,14 +39,11 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-
   }
-
 }
 
 .form__name,
 .form__taget {
-
   @media (min-width: $desktop-width) {
     width: 50%;
   }
@@ -59,7 +53,6 @@
   @media (min-width: $desktop-width) {
     width: 100%;
   }
-
 }
 
 .alignment {
@@ -187,9 +180,11 @@
 .form__comment,
 .form__other {
   border: none;
+
   @media (min-width: $desktop-width) {
     width: 100%;
   }
+
   .subtitle__container {
     align-items: center;
   }
@@ -256,7 +251,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     padding: 0 70px 50px;
-
   }
 }
 
