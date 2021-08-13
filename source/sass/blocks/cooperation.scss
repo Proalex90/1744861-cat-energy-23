@@ -2,16 +2,34 @@
   padding: 30px 20px;
   display: flex;
   align-items: center;
+  justify-content: space-around;
+
+  @media (min-width: $desktop-width) {
+    padding: 70px 110px;
+    margin: 0 auto;
+    max-width: $desktop-width;
+  }
 }
 
 .cooperation__title {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 25%;
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .cooperation__text {
   line-height: 20px;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    width: 25%;
+    font-size: 16px;
+  }
 }
