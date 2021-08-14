@@ -24,14 +24,12 @@
 }
 
 .main__form {
-
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
     max-width: 1440px;
+    margin: 0 auto;
   }
-
-
 }
 
 .form__name,
@@ -42,14 +40,11 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-
   }
-
 }
 
 .form__name,
 .form__taget {
-
   @media (min-width: $desktop-width) {
     width: 50%;
   }
@@ -59,7 +54,6 @@
   @media (min-width: $desktop-width) {
     width: 100%;
   }
-
 }
 
 .alignment {
@@ -158,8 +152,12 @@
 .contacts__list {
   font-size: 16px;
   padding: 20px;
-  display: flex;
-  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 .contacts__bag {
@@ -171,6 +169,10 @@
   align-items: center;
   margin-bottom: 15px;
   color: $color-form-text;
+
+  @media (min-width: $desktop-width) {
+    width: 45%;
+  }
 }
 
 .contacts__input {
@@ -187,9 +189,11 @@
 .form__comment,
 .form__other {
   border: none;
+
   @media (min-width: $desktop-width) {
     width: 100%;
   }
+
   .subtitle__container {
     align-items: center;
   }
@@ -240,6 +244,10 @@
     line-height: 30px;
     padding: 30px 70px 10px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 62px 0;
+  }
 }
 
 .other__item {
@@ -247,6 +255,10 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
   }
 }
 
@@ -256,7 +268,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     padding: 0 70px 50px;
-
   }
 }
 
