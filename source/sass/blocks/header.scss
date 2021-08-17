@@ -16,6 +16,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .logo {
@@ -34,6 +38,12 @@
   text-align: center;
   width: 100%;
   order: 4;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: auto;
+    margin-left: 90px;
+  }
 }
 
 .nav--closed {
@@ -43,6 +53,12 @@
   width: 100%;
   height: 0;
   transform: translate(0, -50%) scaleY(0);
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: auto;
+    margin-left: 90px;
+  }
 }
 
 .nav--opened {
@@ -51,6 +67,12 @@
   width: 100%;
   order: 4;
   transition: 0.5s;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: auto;
+    margin-left: 90px;
+  }
 }
 
 .menu__toggle {
