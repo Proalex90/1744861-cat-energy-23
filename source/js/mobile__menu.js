@@ -1,6 +1,5 @@
- const navMain = document.querySelector('.nav');
-  const navToggle = document.querySelector('.menu__toggle');
-
+const navMain = document.querySelector('.nav');
+const navToggle = document.querySelector('.menu__toggle');
   navMain.classList.remove('nav--nojs');
   navMain.classList.add('nav--opened');
   navToggle.addEventListener('click', function() {
