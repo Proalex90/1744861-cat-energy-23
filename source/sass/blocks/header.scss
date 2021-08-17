@@ -104,6 +104,7 @@
 
 .nav--opened + .menu__toggle {
   transform: translateY(0);
+
   &::before,
   &::after {
     content: "";
