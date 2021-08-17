@@ -89,6 +89,12 @@
     height: 194px;
     transform: translate(20%, -5%);
   }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 97px;
+    transform: translate(25%, -5%);
+  }
 }
 
 .nutrition-program__img--pro {
@@ -100,6 +106,12 @@
     width: 268px;
     height: 200px;
     transform: translate(-15%, 0);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 56px;
+    transform: translate(-13%, 50%);
   }
 }
 
