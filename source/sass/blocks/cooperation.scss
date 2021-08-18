@@ -3,11 +3,15 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background-color: $color-textw;
 
   @media (min-width: $desktop-width) {
-    padding: 70px 110px;
-    margin: 0 auto;
-    max-width: $desktop-width;
+    position: absolute;
+    left: 110px;
+    top: 95px;
+    padding: 65px 75px;
+    width: 570px;
+    justify-content: space-between;
   }
 }
 
@@ -21,6 +25,10 @@
     font-size: 20px;
     line-height: 21px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 160px;
+  }
 }
 
 .cooperation__text {
@@ -31,5 +39,9 @@
   @media (min-width: $tablet-width) {
     width: 25%;
     font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 160px;
   }
 }
