@@ -16,6 +16,9 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  height: 65px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -47,14 +50,18 @@
 }
 
 .nav--closed {
-  order: 4;
   display: block;
   text-align: center;
+  position: absolute;
+  top: 64px;
+  left: 0;
   width: 100%;
-  height: 0;
   transform: translate(0, -50%) scaleY(0);
+  transition: 0.3s;
 
   @media (min-width: $tablet-width) {
+    position: static;
+    transform: none;
     margin: 0;
     width: auto;
     margin-left: 90px;
@@ -62,13 +69,18 @@
 }
 
 .nav--opened {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  background-color: $color-textw;
   margin: 0 auto;
   text-align: center;
   width: 100%;
-  order: 4;
-  transition: 0.5s;
+  transition: 0.3s;
 
   @media (min-width: $tablet-width) {
+    position: static;
+    transform: none;
     margin: 0;
     width: auto;
     margin-left: 90px;
@@ -80,7 +92,6 @@
   border: none;
   order: 3;
   transform: translateY(-8px);
-  padding: 0 20px;
   min-height: 65px;
   cursor: pointer;
 
@@ -115,6 +126,7 @@
   }
 
   &::before {
+    position: absolute;
     transform: rotate(45deg);
     box-shadow: none;
   }
@@ -161,8 +173,13 @@
   font-weight: 500;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 8px;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
   }
+}
+
+.nav__link--current {
+  border-bottom: 2px solid $basic-color;
 }
