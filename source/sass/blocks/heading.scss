@@ -3,6 +3,7 @@
   color: $color-textw;
   min-height: 302px;
   text-align: center;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     text-align: left;
@@ -47,6 +48,22 @@
 .heading__slogan {
   @media (min-width: $tablet-width) {
     color: $color-text;
+  }
+}
+
+.heading__img {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    min-width: 709px;
+    height: auto;
+    transform: translateX(-50%);
+    text-align: center;
+    bottom: -550px;
+    z-index: -1;
   }
 }
 

@@ -141,6 +141,7 @@
     text-align: start;
     margin-left: 0;
     width: auto;
+    margin-top: 55px;
   }
 }
 
@@ -151,5 +152,12 @@
   @media (min-width: $desktop-width) {
     grid-column: 2;
     grid-row: 1/-4;
+  }
+}
+
+.example__before-after-img {
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 620px;
   }
 }
