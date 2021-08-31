@@ -3,6 +3,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 55px 30px 61px;
+    background-color: $basic-background;
   }
 }
 
@@ -49,6 +50,10 @@
 
 .social__item {
   margin-right: 36px;
+
+  &:last-child {
+    margin: 0;
+  }
 }
 
 .social__icon--vk {
@@ -84,8 +89,11 @@
 }
 
 .copyright__link {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18.4px;
+  color: $color-form-text;
   text-decoration: none;
   text-transform: none;
-  color: $color-text;
   margin-right: 22px;
 }

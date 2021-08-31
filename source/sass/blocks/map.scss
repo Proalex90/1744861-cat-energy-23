@@ -1,16 +1,25 @@
 .map {
   @media (min-width: $desktop-width) {
     position: relative;
+    width: 100%;
+    background-color: $basic-background;
+  }
+}
+
+.map__container {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 
 .map__img {
   width: 100%;
-  min-height: 320px;
-  background: url("../img/location.jpg") no-repeat center;
-  background-size: cover;
+  height: auto;
 
   @media (min-width: $tablet-width) {
+    display: block;
     width: 100%;
     min-height: 400px;
   }

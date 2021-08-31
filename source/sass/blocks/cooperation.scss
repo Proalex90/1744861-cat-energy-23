@@ -37,11 +37,27 @@
   text-transform: none;
 
   @media (min-width: $tablet-width) {
-    width: 25%;
     font-size: 16px;
+    text-align: right;
+
+    &:last-child {
+      margin-top: 20px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 160px;
+  }
+}
+
+.cooperation__text-container {
+  width: 300px;
+  align-items: flex-start;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    width: 170px;
   }
 }
