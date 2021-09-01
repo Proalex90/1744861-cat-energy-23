@@ -100,6 +100,7 @@
   @media (min-width: $desktop-width) {
     height: 52px;
     margin: 0 0 20px;
+
     &:last-child {
       margin: 0;
     }
@@ -151,6 +152,7 @@
     line-height: 30px;
     border: 1px solid $color-border-input;
   }
+
   @media (min-width: $desktop-width) {
     padding-right: 110px;
   }
@@ -211,6 +213,7 @@
   text-transform: none;
   margin-bottom: 15px;
   width: min-content;
+
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
@@ -403,6 +406,7 @@
     display: flex;
     padding: 0 70px 50px;
   }
+
   @media (min-width: $desktop-width) {
     padding: 60px 110px 82px;
   }
