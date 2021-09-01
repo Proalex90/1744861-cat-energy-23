@@ -43,10 +43,12 @@
       </div>
     </header>
     <main class="main">
-      <h1 class="main__title">Подбор программы</h1>
-      <p class="main__text">
-        Заполните анкету, и мы подберем программу питания для вашего кота
-      </p>
+      <div class="main-title__container">
+        <h1 class="main__title">Подбор программы</h1>
+        <p class="main__text">
+          Заполните анкету, и мы подберем программу питания для вашего кота
+        </p>
+      </div>
       <form
         method="GET"
         action="https://echo.htmlacademy.ru"
@@ -133,10 +135,9 @@
         </fieldset>
         <fieldset class="form__contacts">
           <div class="subtitle__container">
-            <h2 class="contacts__subtitle">
+            <h2 class="contacts__subtitle decoration-line">
               Контактные данные (владельца кота)
             </h2>
-            <!--             <div class="decoration-line"></div> -->
           </div>
           <ul class="contacts__list">
             <li class="contacts__item">
@@ -242,8 +243,7 @@
         </fieldset>
         <fieldset class="form__comment">
           <div class="subtitle__container">
-            <h2 class="comment__subtitle">Комментарий</h2>
-            <div class="decoration-line"></div>
+            <h2 class="comment__subtitle decoration-line">Комментарий</h2>
           </div>
           <div class="comment__wrapper">
             <textarea
@@ -260,8 +260,7 @@
         </fieldset>
         <fieldset class="form__other other">
           <div class="subtitle__container">
-            <h3 class="other__subtitle">Дополнительно</h3>
-            <div class="decoration-line"></div>
+            <h3 class="other__subtitle decoration-line">Дополнительно</h3>
           </div>
           <ul class="other__list">
             <li class="other__item">
@@ -322,15 +321,41 @@
       </form>
       <section class="map">
         <h3 class="visually-hidden">Как нас найти</h3>
-        <section class="cooperation">
-          <h3 class="cooperation__title">
-            Приглашаем к сотрудничеству дилеров!
-          </h3>
-          <p class="cooperation__text">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </p>
-        </section>
-        <div class="map__img"></div>
+        <div class="map__container">
+          <section class="cooperation">
+            <h3 class="cooperation__title">
+              Приглашаем к сотрудничеству дилеров!
+            </h3>
+            <div class="cooperation__text-container">
+              <p class="cooperation__text">ул. Большая Конюшенная, д. 19/8</p>
+              <p class="cooperation__text">Санкт-Петербург</p>
+            </div>
+          </section>
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                img/index/location-desktop.jpg    1x,
+                img/index/location-desktop@2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                img/index/location-tablet.jpg    1x,
+                img/index/location-tablet@2x.jpg 2x
+              "
+            />
+            <img
+              src="img/index/location-mobile.jpg"
+              srcset="img/index/location-mobile@2x.jpg 2x"
+              alt="Наше местоположение на карте"
+              class="map__img"
+              width="320"
+              height="362"
+            />
+          </picture>
+        </div>
       </section>
     </main>
     <footer class="footer">

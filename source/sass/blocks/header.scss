@@ -9,6 +9,18 @@
     margin: 0 auto;
     max-width: $desktop-width;
     position: relative;
+  }
+}
+
+.header--index {
+  @media (min-width: $desktop-width) {
+    & .nav__link--current {
+      border-bottom: 2px solid $color-textw;
+    }
+
+    & .nav__link {
+      color: $color-textw;
+    }
 
     &::before,
     &::after {
@@ -21,6 +33,7 @@
       right: 0;
       z-index: 1;
     }
+
     &::before {
       background: url("../img/index/cat-desktop.jpg");
 
@@ -28,6 +41,7 @@
         background: url("../img/index/cat-desktop@2x.jpg");
       }
     }
+
     &::after {
       background-color: transparentize($basic-color, 0.15);
     }
@@ -51,6 +65,17 @@
 
 .logo {
   padding-left: 20px;
+}
+
+.logo__img {
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 60px;
+  }
 }
 
 .nav {
@@ -203,18 +228,10 @@
     line-height: 24px;
     font-weight: 400;
   }
-
-  @media (min-width: $desktop-width) {
-    color: $color-textw;
-  }
 }
 
 .nav__link--current {
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid $basic-color;
-  }
-
-  @media (min-width: $desktop-width) {
-    border-bottom: 2px solid $color-textw;
   }
 }
