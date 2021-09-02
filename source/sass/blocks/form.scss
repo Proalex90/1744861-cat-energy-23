@@ -72,8 +72,9 @@
 }
 
 .form__contacts {
-  @media (min-width: $tablet-width) {
-  }
+  padding-top: 27px;
+  /* @media (min-width: $tablet-width) {
+  } */
 
   @media (min-width: $desktop-width) {
     width: 100%;
@@ -128,7 +129,7 @@
   font-size: 16px;
   line-height: 18px;
   padding: 12px;
-  margin: 0px auto 0 15px;
+  margin: 0 auto 0 15px;
   width: 100%;
   font-family: "Oswald", "Arial", sans-serif;
 
@@ -242,10 +243,6 @@
   }
 }
 
-.form__contacts {
-  padding-top: 27px;
-}
-
 .contacts__subtitle {
   width: 203px;
 
@@ -331,7 +328,7 @@
   line-height: 26px;
   font-weight: 400;
   text-transform: none;
-  margin: 0px 0 35px;
+  margin: 0 0 35px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;

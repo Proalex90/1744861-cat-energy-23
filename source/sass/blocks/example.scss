@@ -167,6 +167,7 @@
 
 .example__before-after-img {
   transform: translateX(-20px);
+
   @media (min-width: $tablet-width) {
     width: 708px;
     height: 620px;
