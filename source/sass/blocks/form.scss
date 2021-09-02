@@ -11,7 +11,7 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
-  padding: 20px;
+  padding: 27px 20px 10px;
   text-transform: none;
 
   @media (min-width: $tablet-width) {
@@ -26,7 +26,7 @@
 }
 
 .main__text {
-  padding: 20px;
+  padding: 28px 20px 10px;
 
   @media (min-width: $tablet-width) {
     padding: 0 70px;
@@ -41,6 +41,10 @@
 }
 
 .main__form {
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
@@ -68,6 +72,9 @@
 }
 
 .form__contacts {
+  @media (min-width: $tablet-width) {
+  }
+
   @media (min-width: $desktop-width) {
     width: 100%;
   }
@@ -79,10 +86,11 @@
 
 .form__name-list {
   color: $color-form-text;
-  padding: 20px;
+  padding: 29px 20px 10px;
 
   @media (min-width: $tablet-width) {
     padding: 70px;
+    padding-left: 0;
     font-size: 20px;
     line-height: 30px;
   }
@@ -92,10 +100,16 @@
   }
 }
 
+.form__name-label {
+  font-size: 16px;
+  line-height: 18px;
+}
+
 .form__name-item {
   display: flex;
   align-items: center;
   justify-content: stretch;
+  margin-bottom: 15px;
 
   @media (min-width: $desktop-width) {
     height: 52px;
@@ -113,8 +127,8 @@
   border: 1px solid $color-border-input;
   font-size: 16px;
   line-height: 18px;
-  padding: 15px;
-  margin: 15px auto 0 10px;
+  padding: 12px;
+  margin: 0px auto 0 15px;
   width: 100%;
   font-family: "Oswald", "Arial", sans-serif;
 
@@ -130,12 +144,17 @@
   }
 }
 
+.form__input-number {
+  padding-left: 16px;
+}
+
 .form__taget {
+  padding: 0 20px;
   font-size: 16px;
   color: $color-form-text_dark;
 
   @media (min-width: $tablet-width) {
-    padding: 0 70px 70px;
+    padding: 0 0 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -144,7 +163,7 @@
 }
 
 .taget__list {
-  padding: 20px 20px 20px 70px;
+  padding: 27px 20px 24px 46px;
 
   @media (min-width: $tablet-width) {
     padding: 30px 30px 30px 100px;
@@ -182,7 +201,7 @@
   height: 30px;
   border: 8px solid $color-textw;
   box-shadow: 0 0 0 1px $color-border-special;
-  margin-left: -50px;
+  margin-left: -46px;
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
@@ -218,23 +237,29 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 75px;
+    max-width: 100%;
+    padding-left: 0;
   }
+}
+
+.form__contacts {
+  padding-top: 27px;
 }
 
 .contacts__subtitle {
   width: 203px;
 
   @media (min-width: $tablet-width) {
-    width: 605px;
+    width: max-content;
   }
 }
 
 .contacts__list {
   font-size: 16px;
-  padding: 20px;
+  padding: 18px 20px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 0 70px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -264,7 +289,7 @@
 .contacts__input {
   font-size: 16px;
   font-family: "Oswald", sans-serif;
-  padding: 15px 40px 15px 15px;
+  padding: 10px 40px 10px 15px;
   margin: 0 auto 0 10px;
   width: 100%;
   border: 1px solid $color-border-special;
@@ -274,12 +299,21 @@
 
 .contacts__icon {
   position: absolute;
+}
+
+.contacts__icon--email {
   right: 15px;
-  top: 20px;
+  top: 18px;
+}
+
+.contacts__icon--phone {
+  right: 13px;
+  top: 13px;
 }
 
 .form__comment,
 .form__other {
+  padding-top: 8px;
   border: none;
 
   @media (min-width: $desktop-width) {
@@ -297,7 +331,7 @@
   line-height: 26px;
   font-weight: 400;
   text-transform: none;
-  margin: 65px 0 75px;
+  margin: 0px 0 35px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -314,23 +348,24 @@
   font-weight: 400;
   text-transform: uppercase;
   width: 100%;
+  height: 153px;
   border: 1px solid $color-border-input;
 }
 
 .comment__wrapper {
   padding: 0 20px;
 
-  @media (min-width: $tablet-width) {
-    padding: 0 70px;
-  }
-
   @media (min-width: $desktop-width) {
     padding: 0 110px;
   }
 }
 
+.form__other {
+  padding-top: 20px;
+}
+
 .other__list {
-  padding: 30px 20px 10px 70px;
+  padding: 3px 20px 10px 66px;
   font-size: 16px;
 
   @media (min-width: $tablet-width) {
@@ -338,7 +373,7 @@
     flex-wrap: wrap;
     font-size: 20px;
     line-height: 30px;
-    padding: 30px 70px 10px 130px;
+    padding: 30px 0 10px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -375,7 +410,7 @@
   background-color: $color-textw;
   border: 1px solid $color-border-special;
   position: absolute;
-  margin-left: -50px;
+  margin-left: -46px;
 
   @media (min-width: $tablet-width) {
     width: 40px;
@@ -400,11 +435,11 @@
 }
 
 .submit__container {
-  padding: 20px;
+  padding: 5px 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    padding: 0 70px 50px;
+    padding: 0 0 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -426,7 +461,7 @@
 }
 
 .form__desc {
-  margin-top: 20px;
+  margin-top: 21px;
   text-transform: none;
   text-align: center;
   line-height: 16px;

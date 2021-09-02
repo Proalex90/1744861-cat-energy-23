@@ -62,7 +62,7 @@
   font-weight: 400;
   text-transform: none;
   margin: 0 auto;
-  padding: 30px 20px;
+  padding: 26px 20px 24px;
   z-index: 2;
 
   @media (min-width: $tablet-width) {
@@ -84,7 +84,7 @@
 
 .heading__img {
   position: absolute;
-  bottom: 40px;
+  bottom: 43px;
   left: 50%;
   transform: translateX(-50%);
 

@@ -22,12 +22,17 @@
 }
 
 .footer__logo {
-  padding: 20px;
+  padding: 39px 20px 28px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     padding: 0;
   }
+}
+
+.footer-logo__img {
+  width: 128px;
+  height: 24px;
 }
 
 .footer__social {
@@ -37,7 +42,7 @@
 .socials__list {
   border-top: 1px solid $color-border;
   border-bottom: 1px solid $color-border;
-  padding: 20px;
+  padding: 20px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,7 +57,7 @@
   margin-right: 36px;
 
   &:last-child {
-    margin: 0;
+    margin-right: 3px;
   }
 }
 

@@ -14,6 +14,11 @@
   font-style: normal;
 }
 
+.html,
+.page {
+  overflow-x: hidden;
+}
+
 *,
 *::before,
 *::after {
@@ -61,7 +66,7 @@
   &::after {
     content: "";
     display: block;
-    margin-top: 15px;
+    top: 15px;
     height: 2px;
     width: 100vw;
     position: absolute;
@@ -74,19 +79,19 @@
     &::after {
       content: "";
       display: block;
-      margin-top: 10px;
+      top: 20px;
       height: 2px;
+      position: absolute;
       background-color: #68b738;
     }
 
     &::before {
-      width: 30px;
-      margin-right: 40px;
+      width: 100vw;
+      right: calc(100% + 40px);
     }
 
     &::after {
       width: 100vw;
-      position: absolute;
       left: calc(100% + 40px);
     }
   }
