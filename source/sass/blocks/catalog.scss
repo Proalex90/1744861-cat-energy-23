@@ -165,6 +165,17 @@
   }
 }
 
+.catalog__button-more {
+  &:hover,
+  &:active {
+    background-color: $color-catalog-border;
+  }
+
+  &:active {
+    color: transparentize($color-form-text, 0.7);
+  }
+}
+
 .catalog__subtitle-more {
   font-weight: 400;
   font-size: 16px;

@@ -189,6 +189,10 @@
 .form__taget-label {
   display: flex;
   align-items: center;
+
+  &:hover .taget__radio {
+    box-shadow: 0 0 0 1px $color-form-border;
+  }
 }
 
 .form__input-radio {
@@ -292,6 +296,11 @@
   border: 1px solid $color-border-special;
   text-transform: uppercase;
   color: $color-form-text;
+
+  &:focus ~ .contacts__icon--email,
+  &:focus ~ .contacts__icon--phone {
+    fill: $basic-color;
+  }
 }
 
 .contacts__icon {
@@ -394,6 +403,10 @@
 .other__label {
   display: flex;
   align-items: center;
+
+  &:hover .other__check-box {
+    border: 1px solid $color-form-border;
+  }
 }
 
 .other__input-checkbox {

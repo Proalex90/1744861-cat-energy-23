@@ -190,6 +190,20 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $color-text;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px dotted transparentize($color-text, 0.85);
+    font-size: 20px;
+    line-height: 30px;
+
+    &:hover {
+      border-bottom: 1px solid transparentize($color-text, 0.6);
+    }
+
+    &:active {
+      border-bottom: none;
+    }
+  }
 }
 
 .example__range {
@@ -203,6 +217,13 @@
   border-radius: 6px;
   border: 1px solid $color-border-special;
 
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    height: 6px;
+    background-color: $color-range-background;
+    border: none;
+  }
+
   &::before {
     content: "";
     display: block;
@@ -214,5 +235,38 @@
     top: 50%;
     transform: translateY(-50%);
     left: 6px;
+
+    @media (min-width: $tablet-width) {
+      left: 50%;
+      height: 36px;
+      background-color: $color-textw;
+      border-radius: 50%;
+      border: 1px solid $color-border-special;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 1px 3px transparentize($color-text, 0.84);
+    }
+  }
+
+  &:hover::before {
+    cursor: pointer;
+    box-shadow: 0 2px 4px transparentize($color-text, 0.81);
+  }
+
+  &:active::before {
+    border: 1px solid $basic-color;
+    box-shadow: 0 3px 5px transparentize($color-text, 0.8);
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: $basic-color;
+    border-radius: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
   }
 }

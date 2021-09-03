@@ -52,6 +52,15 @@
   color: #ffffff;
   background-color: #68b738;
   border: none;
+
+  &:hover {
+    background-color: $basic-color2;
+  }
+
+  &:active {
+    background-color: $basic-color2;
+    color: transparentize($color-textw, 0.7);
+  }
 }
 
 .decoration-line {

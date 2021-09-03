@@ -128,12 +128,23 @@
   color: $color-textw;
   background-color: $basic-color;
 
+  &:hover {
+    background-color: $basic-color2;
+  }
+
+  &:active {
+    background-color: $basic-color2;
+    color: transparentize($color-textw, 0.7);
+  }
+
   @media (min-width: $tablet-width) {
     margin: 50px 0 560px;
     margin-top: 50px;
     text-align: center;
     width: 244px;
     min-height: 54px;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
