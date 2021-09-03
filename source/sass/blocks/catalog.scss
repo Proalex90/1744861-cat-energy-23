@@ -1,7 +1,7 @@
 .main__catalog {
   @media (min-width: $tablet-width) {
     padding: 0 30px;
-    max-width: 900px;
+    max-width: $tablet-width;
     margin: 0 auto;
   }
 
@@ -27,12 +27,15 @@
 }
 
 .catalog__container-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     width: 100%;
     margin-bottom: 35px;
-    margin-top: -100px;
+    margin-top: -120px;
   }
 }
 
@@ -44,8 +47,19 @@
   }
 }
 
-.catalog__img {
-  margin-top: 10px;
+.catalog__img--tablet-small {
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+    width: 150px;
+    height: auto;
+  }
+}
+
+.catalog__img--tablet-big {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: auto;
+  }
 }
 
 .catalog__list {
@@ -61,7 +75,7 @@
 .catalog__item {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 20px;
+  padding: 20px 20px 24px 20px;
   border-top: 1px solid $color-catalog-border;
 
   &:last-child {
@@ -76,7 +90,7 @@
     padding: 39px;
     border: none;
     background-color: $basic-background;
-    margin-bottom: 140px;
+    margin-bottom: 160px;
 
     &:last-child {
       background-color: $color-textw;
@@ -97,6 +111,7 @@
 }
 
 .catalog__subtitle {
+  text-align: left;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -125,6 +140,7 @@
 
 .container-price__list {
   display: flex;
+  padding-top: 2px;
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 22px;
@@ -149,6 +165,17 @@
   }
 }
 
+.catalog__button-more {
+  &:hover,
+  &:active {
+    background-color: $color-catalog-border;
+  }
+
+  &:active {
+    color: transparentize($color-form-text, 0.7);
+  }
+}
+
 .catalog__subtitle-more {
   font-weight: 400;
   font-size: 16px;
@@ -162,7 +189,7 @@
   width: 30px;
   height: 2px;
   background-color: #d3d3d3;
-  margin: 25px auto;
+  margin: 17px auto 37px;
 
   &::before {
     content: "";
@@ -186,9 +213,17 @@
 .subtitle__container {
   display: flex;
   align-items: baseline;
-  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
+    display: block;
+    margin: 0 auto;
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+    margin: 0;
     padding: 0;
     width: 100%;
   }
@@ -214,6 +249,8 @@
 }
 
 .additionally {
+  padding-top: 27px;
+
   @media (min-width: $desktop-width) {
     max-width: $desktop-width;
     margin: 0 auto;
@@ -227,67 +264,42 @@
 .additionally__title {
   font-weight: 400;
   font-size: 24px;
-  width: 260px;
   line-height: 24px;
   text-transform: none;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
+    width: auto;
+    display: inline-flex;
+    max-width: 100%;
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 80px;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 100%;
-  }
-}
-
-.additionally__title--decoration-line {
-  display: flex;
-  align-items: center;
-  font-size: 36px;
-  line-height: 36px;
-  width: 100%;
-  margin-bottom: 75px;
-
-  &::before,
-  &::after {
-    content: "";
-    display: block;
-    margin-top: 10px;
-    height: 2px;
-    width: auto;
-    background-color: #68b738;
-  }
-
-  &::before {
-    width: 30px;
-    margin-right: 40px;
-  }
-
-  &::after {
-    width: 100%;
-    margin-left: 40px;
-  }
+  /* @media (min-width: $desktop-width) {
+  } */
 }
 
 .additionally__list {
-  padding: 20px;
+  padding: 34px 20px 36px;
 
   @media (min-width: $tablet-width) {
-    max-width: 900px;
+    padding: 0 30px;
+    max-width: $tablet-width;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 75%;
     padding: 0;
+    padding-bottom: 86px;
   }
 }
 
 .additionally__item {
   border-top: 1px solid $color-border-special;
-  padding: 10px 0 20px;
+  padding: 13px 0 18px;
 
   &:last-child {
     border-bottom: 1px solid $color-border-special;
@@ -303,16 +315,18 @@
   @media (min-width: $desktop-width) {
     flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
   }
 }
 
 .additionally__container-price {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0 15px;
+  padding: 13px 0 15px;
 
   @media (min-width: $tablet-width) {
-    width: 30%;
+    width: 33%;
     justify-content: flex-end;
   }
 }
@@ -359,7 +373,12 @@
 }
 
 .gift {
-  padding: 20px;
+  padding: 0 20px 12px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    padding: 0 30px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 245px;
@@ -369,13 +388,79 @@
 }
 
 .gift__container {
-  background-color: $basic-color;
+  background-color: transparentize($basic-color, 0.15);
   text-align: center;
-  min-height: 289px;
-}
+  height: 289px;
+  position: relative;
 
-.gift__icon {
-  margin: 58px 0 48px;
+  @media (min-width: $tablet-width) {
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 289px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 78px;
+    height: 80px;
+    background: url("../img/catalog/icon-gift.svg") no-repeat;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      left: 80px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 290px;
+    z-index: -1;
+    background-image: url("../img/catalog/gift-background-cat-mobile.jpg");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/gift-background-cat-mobile@2x.jpg");
+    }
+
+    @media (min-width: $tablet-width) {
+      height: 200px;
+      background-image: url("../img/catalog/gift-background-cat-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/catalog/gift-background-cat-tablet@2x.jpg");
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 245px;
+      height: 289px;
+      background-image: url("../img/catalog/gift-background-cat-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/catalog/gift-background-cat-desktop@2x.jpg");
+      }
+    }
+  }
 }
 
 .gift__slogan {
@@ -385,6 +470,19 @@
   line-height: 20px;
   text-transform: none;
   color: $color-textw;
-  width: 160px;
-  margin: 0;
+  width: 170px;
+  margin: 0 auto;
+  padding-top: 189px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 125px 0 auto;
+    padding: 70px 0;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 185px;
+    margin: 0 auto;
+    text-align: center;
+  }
 }

@@ -1,12 +1,13 @@
 .description {
-  padding: 20px;
+  padding: 30px 20px 43px;
 
   @media (min-width: $tablet-width) {
     padding: 30px;
+    padding-bottom: 550px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 70px 110px;
+    padding: 70px 110px 220px;
     margin: 0 auto;
     max-width: $desktop-width;
   }
@@ -25,6 +26,8 @@
 }
 
 .description__list {
+  padding-top: 18px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -96,6 +99,7 @@
     justify-content: space-around;
     margin-right: 50px;
     margin-bottom: 50px;
+    padding-top: 20px;
 
     &:nth-child(4n) {
       margin-right: 0;
@@ -132,6 +136,7 @@
 
   &--eat {
     background: url("../img/index/icon-eat.svg") no-repeat;
+    background-size: 31px 30px;
   }
 
   &--alarm {

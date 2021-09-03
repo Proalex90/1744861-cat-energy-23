@@ -14,6 +14,11 @@
   font-style: normal;
 }
 
+.html,
+.page {
+  overflow-x: hidden;
+}
+
 *,
 *::before,
 *::after {
@@ -47,4 +52,56 @@
   color: #ffffff;
   background-color: #68b738;
   border: none;
+
+  &:hover {
+    background-color: $basic-color2;
+  }
+
+  &:active {
+    background-color: $basic-color2;
+    color: transparentize($color-textw, 0.7);
+  }
+}
+
+.decoration-line {
+  display: flex;
+  position: relative;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    top: 15px;
+    height: 2px;
+    width: 100vw;
+    position: absolute;
+    left: calc(100% + 20px);
+    background-color: #68b738;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      top: 20px;
+      height: 2px;
+      position: absolute;
+      background-color: #68b738;
+    }
+
+    &::before {
+      width: 100vw;
+      right: calc(100% + 40px);
+    }
+
+    &::after {
+      width: 100vw;
+      left: calc(100% + 40px);
+    }
+  }
 }

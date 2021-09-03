@@ -5,6 +5,33 @@
   text-align: center;
   position: relative;
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+
+    background: url("../img/index/index-background-mobile.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 302px;
+    display: block;
+    width: 100%;
+    z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/index/index-background-mobile@2x.jpg") no-repeat
+        center;
+      background-size: cover;
+      min-height: 302px;
+      display: block;
+      width: 100%;
+      z-index: -1;
+    }
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     text-align: left;
   }
@@ -18,7 +45,8 @@
 
 .heading__container {
   min-height: 302px;
-  background-color: $basic-color;
+  position: relative;
+  background-color: transparentize($basic-color, 0.15);
 
   @media (min-width: $tablet-width) {
     background-color: $color-textw;
@@ -34,7 +62,8 @@
   font-weight: 400;
   text-transform: none;
   margin: 0 auto;
-  padding: 30px 20px;
+  padding: 26px 20px 24px;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     color: $color-text;
@@ -48,12 +77,14 @@
 .heading__slogan {
   @media (min-width: $tablet-width) {
     color: $color-text;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
 .heading__img {
   position: absolute;
-  bottom: 40px;
+  bottom: 43px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -64,6 +95,15 @@
     text-align: center;
     bottom: -550px;
     z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    min-width: auto;
+    height: auto;
+    top: 30px;
+    left: 58%;
+    z-index: 1;
   }
 }
 
@@ -88,11 +128,26 @@
   color: $color-textw;
   background-color: $basic-color;
 
+  &:hover {
+    background-color: $basic-color2;
+  }
+
+  &:active {
+    background-color: $basic-color2;
+    color: transparentize($color-textw, 0.7);
+  }
+
   @media (min-width: $tablet-width) {
-    margin: 50px 0 500px;
+    margin: 50px 0 560px;
     margin-top: 50px;
     text-align: center;
     width: 244px;
     min-height: 54px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 200px;
   }
 }
