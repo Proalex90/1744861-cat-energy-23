@@ -10,7 +10,6 @@
     padding: 0 110px;
     margin: 0 auto;
     max-width: $desktop-width;
-    position: relative;
   }
 }
 
@@ -29,7 +28,7 @@
       content: "";
       display: block;
       position: absolute;
-      width: 720px;
+      width: 50%;
       height: 694px;
       top: 0;
       right: 0;
@@ -38,6 +37,8 @@
 
     &::before {
       background-image: url("../img/index/cat-desktop.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/index/cat-desktop@2x.jpg");

@@ -61,6 +61,22 @@
   }
 }
 
+.social__link {
+  &:hover .social__icon use {
+    fill: $basic-color;
+    stroke: $basic-color;
+  }
+
+  &:active {
+    stroke: $basic-color;
+    opacity: 0.3;
+  }
+}
+
+.social__icon {
+  stroke: $color-social-stroke;
+}
+
 .social__icon--vk {
   @media (min-width: $tablet-width) {
     width: 30px;
@@ -78,7 +94,7 @@
 .social__icon--fb {
   @media (min-width: $tablet-width) {
     width: 28px;
-    height: 23px;
+    height: 33px;
   }
 }
 
@@ -101,4 +117,8 @@
   text-decoration: none;
   text-transform: none;
   margin-right: 22px;
+
+  &:hover + .copyright__logo use {
+    fill: #68b738;
+  }
 }

@@ -297,14 +297,15 @@
   text-transform: uppercase;
   color: $color-form-text;
 
-  &:focus ~ .contacts__icon--email,
-  &:focus ~ .contacts__icon--phone {
+  &:focus + .contacts__icon use {
+    stroke: $basic-color;
     fill: $basic-color;
   }
 }
 
 .contacts__icon {
   position: absolute;
+  stroke: $color-form-text_dark;
 }
 
 .contacts__icon--email {
