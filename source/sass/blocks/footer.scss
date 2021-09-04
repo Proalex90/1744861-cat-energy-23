@@ -119,6 +119,6 @@
   margin-right: 22px;
 
   &:hover + .copyright__logo use {
-    fill: #68b738;
+    stroke: $basic-color;
   }
 }
