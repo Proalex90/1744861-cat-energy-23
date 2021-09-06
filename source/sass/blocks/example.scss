@@ -35,7 +35,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 80px;
+    margin-top: 44px;
   }
 }
 
@@ -49,6 +49,12 @@
     font-size: 16px;
     line-height: 24px;
     width: 97%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 147px;
+    margin-bottom: 68px;
+    width: 436px;
   }
 }
 
@@ -79,6 +85,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    justify-content: flex-start;
   }
 }
 
@@ -95,6 +102,12 @@
     width: 163px;
     min-height: 74px;
     padding: 15px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:first-child {
+      margin-right: 42px;
+    }
   }
 }
 
@@ -156,7 +169,7 @@
   @media (min-width: $desktop-width) {
     text-align: start;
     margin-left: 0;
-    width: auto;
+    width: 100%;
     margin-top: 55px;
   }
 }
@@ -165,6 +178,12 @@
   @media (min-width: $tablet-width) {
     display: block;
     margin-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    margin-top: 4px;
+    margin-left: 59px;
   }
 }
 
@@ -186,6 +205,13 @@
     height: 620px;
     transform: translateX(0);
   }
+
+  @media (min-width: $desktop-width) {
+    transform: translateX(-20%);
+
+  }
+
+  }
 }
 
 .example__button-container {
@@ -199,6 +225,11 @@
   @media (min-width: $tablet-width) {
     margin-top: -91px;
     padding: 22px 70px 22px 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 99px 22px 29px;
+    margin-top: -81px;
   }
 }
 
@@ -242,6 +273,11 @@
     height: 6px;
     background-color: $color-range-background;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 46%;
+    top: 33%;
   }
 
   &::before {
