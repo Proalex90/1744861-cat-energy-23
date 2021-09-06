@@ -8,7 +8,6 @@
 .nutrition-program__list {
   list-style: none;
   padding: 0 20px;
-  margin-top: 22px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
@@ -24,15 +23,11 @@
 
 .nutrition-program__item {
   margin-top: 23px;
-  padding: 30px 20px 0;
+  padding: 0 20px;
   background-color: $basic-background;
   display: grid;
   grid-template-columns: 71px 1fr 1fr;
   align-items: center;
-
-  &:first-child {
-    margin-top: 0;
-  }
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 57% 1fr;
@@ -68,13 +63,14 @@
 }
 
 .nutrition-program__img-container {
-  margin: auto 0 21px 5px;
+  margin: 21px 0 21px 3px;
   background-color: $basic-color;
   width: 50px;
   height: 53px;
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
+    margin: auto 0 21px 5px;
     grid-row: 1/4;
     grid-column: 2/-1;
     margin: 10px 8px 21px auto;
