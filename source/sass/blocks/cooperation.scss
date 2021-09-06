@@ -72,4 +72,8 @@
 .special-background {
   background-color: $basic-background;
   padding-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }

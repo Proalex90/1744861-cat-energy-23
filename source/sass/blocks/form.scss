@@ -17,7 +17,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding: 70px;
+    padding: 30px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,6 +33,7 @@
     font-size: 20px;
     line-height: 30px;
     width: 70%;
+    margin-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -73,8 +74,10 @@
 
 .form__contacts {
   padding-top: 27px;
-  /* @media (min-width: $tablet-width) {
-  } */
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 
   @media (min-width: $desktop-width) {
     width: 100%;
@@ -90,10 +93,7 @@
   padding: 29px 20px 10px;
 
   @media (min-width: $tablet-width) {
-    padding: 70px;
-    padding-left: 0;
-    font-size: 20px;
-    line-height: 30px;
+    padding: 64px 0 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -104,6 +104,11 @@
 .form__name-label {
   font-size: 16px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__name-item {
@@ -111,6 +116,10 @@
   align-items: center;
   justify-content: stretch;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 17px;
+  }
 
   @media (min-width: $desktop-width) {
     height: 52px;
@@ -133,9 +142,22 @@
   width: 100%;
   font-family: "Oswald", "Arial", sans-serif;
 
+  &:hover {
+    outline: 1px solid $color-border-special;
+  }
+
+  &:focus {
+    outline: 2px solid $color-form-text;
+  }
+
+  &:invalid {
+    outline: 2px solid $color-arror-border;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin: 0 auto 0 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -155,7 +177,7 @@
   color: $color-form-text_dark;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 70px;
+    padding: 0 0 71px;
   }
 
   @media (min-width: $desktop-width) {
@@ -167,7 +189,7 @@
   padding: 27px 20px 24px 46px;
 
   @media (min-width: $tablet-width) {
-    padding: 30px 30px 30px 100px;
+    padding: 30px 30px 30px 88px;
     font-size: 20px;
     line-height: 30px;
     border: 1px solid $color-border-input;
@@ -183,6 +205,10 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
   }
 }
 
@@ -255,6 +281,13 @@
   }
 }
 
+.contacts__label {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
 .contacts__list {
   font-size: 16px;
   padding: 18px 20px 0;
@@ -273,6 +306,10 @@
 
 .contacts__bag {
   min-width: 50px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 70px;
+  }
 }
 
 .contacts__item {
@@ -281,6 +318,10 @@
   align-items: center;
   margin-bottom: 15px;
   color: $color-form-text;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 45%;
@@ -293,13 +334,38 @@
   padding: 10px 40px 10px 15px;
   margin: 0 auto 0 10px;
   width: 100%;
-  border: 1px solid $color-border-special;
+  border: 1px solid $color-border-input;
   text-transform: uppercase;
   color: $color-form-text;
 
   &:focus + .contacts__icon use {
     stroke: $basic-color;
     fill: $basic-color;
+  }
+
+  &:hover {
+    outline: 1px solid $color-border-special;
+  }
+
+  &:focus {
+    outline: 2px solid $color-form-text;
+  }
+
+  &:invalid {
+    outline: 2px solid $color-arror-border;
+  }
+
+  &:invalid + .contacts__icon use {
+    stroke-width: 1.3px;
+    stroke: $color-arror-border;
+    fill: $color-arror-border;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 13px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 20px;
   }
 }
 
@@ -333,6 +399,13 @@
   }
 }
 
+.form__comment {
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    padding-bottom: 41px;
+  }
+}
+
 .comment__subtitle,
 .other__subtitle {
   font-size: 24px;
@@ -344,6 +417,13 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 77px;
+  }
+}
+
+.other__subtitle {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
   }
 }
 
@@ -358,10 +438,21 @@
   width: 100%;
   height: 153px;
   border: 1px solid $color-border-input;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    min-height: 174px;
+    padding: 9px 18px;
+  }
 }
 
 .comment__wrapper {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 0 110px;
@@ -381,7 +472,8 @@
     flex-wrap: wrap;
     font-size: 20px;
     line-height: 30px;
-    padding: 30px 0 10px 60px;
+    padding: 30px 5px 18px 60px;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -394,7 +486,8 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: 39%;
+    margin-bottom: 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -451,7 +544,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    padding: 0 0 50px;
+    padding: 0 0 73px;
   }
 
   @media (min-width: $desktop-width) {
@@ -464,7 +557,10 @@
 
   @media (min-width: $tablet-width) {
     width: 282px;
-    margin-right: 60px;
+    margin-right: 63px;
+    font-size: 20px;
+    line-height: 0px;
+    min-height: 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -484,5 +580,6 @@
     align-items: center;
     display: flex;
     margin: 0;
+    font-size: 16px;
   }
 }
