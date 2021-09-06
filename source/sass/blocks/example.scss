@@ -40,11 +40,12 @@
 }
 
 .example__text {
-  margin: 63px 0 53px;
+  margin: 34px 0 25px;
   font-family: "Arial", sans-serif;
   text-transform: none;
 
   @media (min-width: $tablet-width) {
+    margin: 63px 0 53px;
     font-size: 16px;
     line-height: 24px;
     width: 97%;
@@ -86,7 +87,7 @@
   border: 1px solid $color-border-special;
   border-radius: 3px;
   min-height: 55px;
-  padding: 12px 20px 0;
+  padding: 13px 20px 0;
   width: 45%;
   position: relative;
 
@@ -104,7 +105,7 @@
   font-size: 12px;
   line-height: 12px;
   color: $color-form-text;
-  transform: translate(-50%, 11px);
+  transform: translate(-50%, 16px);
   background-color: $basic-background-example;
   width: 82px;
   text-align: center;
@@ -141,7 +142,7 @@
 
 .example__spending-text {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 35px;
   margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
