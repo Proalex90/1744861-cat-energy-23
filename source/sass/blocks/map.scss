@@ -1,6 +1,10 @@
 .map {
   padding-top: 25px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+
   @media (min-width: $desktop-width) {
     position: relative;
     width: 100%;
@@ -18,8 +22,10 @@
 
 .map__location {
   width: 100%;
-  min-width: 352px;
+  min-height: 362px;
+  height: 100%;
   display: block;
+  border: none;
 
   @media (min-width: $tablet-width) {
     display: block;

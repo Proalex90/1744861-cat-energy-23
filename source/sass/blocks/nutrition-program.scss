@@ -8,9 +8,11 @@
 .nutrition-program__list {
   list-style: none;
   padding: 0 20px;
+  margin-top: 22px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
+    margin-top: -34px;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,15 +24,24 @@
 
 .nutrition-program__item {
   margin-top: 23px;
-  padding: 0 20px;
+  padding: 30px 20px 0;
   background-color: $basic-background;
   display: grid;
   grid-template-columns: 71px 1fr 1fr;
   align-items: center;
 
+  &:first-child {
+    margin-top: 0;
+  }
+
   @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 1fr;
-    padding: 55px;
+    grid-template-columns: 57% 1fr;
+    padding: 75px 53px 50px;
+    margin-top: 30px;
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -49,7 +60,7 @@
   @media (min-width: $tablet-width) {
     grid-column: 1;
     padding-left: 0;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
 
     font-size: 36px;
     line-height: 36px;
@@ -57,7 +68,7 @@
 }
 
 .nutrition-program__img-container {
-  margin: 21px 0 21px 3px;
+  margin: auto 0 21px 5px;
   background-color: $basic-color;
   width: 50px;
   height: 53px;
@@ -66,7 +77,7 @@
   @media (min-width: $tablet-width) {
     grid-row: 1/4;
     grid-column: 2/-1;
-    margin: 0 auto;
+    margin: 10px 8px 21px auto;
     width: 200px;
     height: 200px;
   }
@@ -105,7 +116,7 @@
   @media (min-width: $tablet-width) {
     width: 268px;
     height: 200px;
-    transform: translate(-15%, 0);
+    transform: translate(-13%, 0);
   }
 
   @media (min-width: $desktop-width) {
@@ -145,6 +156,10 @@
   font-size: 16px;
   line-height: 16px;
 
+  @media (min-width: $tablet-width) {
+    padding: 5px 0 5px;
+  }
+
   &::after {
     content: "";
     display: block;
@@ -153,6 +168,10 @@
     margin-left: 15px;
     width: 24px;
     height: 12px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 23px;
+    }
   }
 
   &:hover::after {
@@ -175,5 +194,6 @@
     font-size: 20px;
     line-height: 30px;
     border-top: none;
+    margin-top: 48px;
   }
 }

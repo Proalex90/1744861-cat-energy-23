@@ -3,7 +3,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    padding: 42px 30px;
+    padding: 23px 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,6 +64,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    padding: 0;
   }
 }
 
@@ -104,6 +105,10 @@
   width: 100%;
   order: 4;
 
+  .nav__list {
+    padding-top: 5px;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0;
     width: auto;
@@ -132,7 +137,7 @@
 
 .nav--opened {
   position: absolute;
-  top: 64px;
+  top: 70px;
   left: 0;
   background-color: $color-textw;
   margin: 0 auto;
@@ -219,7 +224,7 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    margin-right: 5%;
+    margin-right: 10%;
 
     &:last-child {
       border-bottom: none;
@@ -236,7 +241,7 @@
   font-weight: 500;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 8px;
+    padding-bottom: 6px;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;

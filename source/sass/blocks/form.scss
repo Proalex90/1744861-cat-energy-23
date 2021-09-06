@@ -304,6 +304,7 @@
 }
 
 .contacts__icon {
+  fill: $color-form-text_dark;
   position: absolute;
   stroke: $color-form-text_dark;
 }
@@ -477,6 +478,7 @@
   text-align: center;
   line-height: 16px;
   font-family: "Arial", sans-serif;
+  padding-bottom: 2px;
 
   @media (min-width: $tablet-width) {
     align-items: center;
