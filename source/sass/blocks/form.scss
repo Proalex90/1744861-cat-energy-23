@@ -390,13 +390,33 @@
 }
 
 .contacts__icon--email {
-  right: 21px;
-  top: 19px;
+  right: 15px;
+  top: 17px;
+
+  @media (min-width: $tablet-width) {
+    right: 14px;
+    top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 21px;
+    top: 19px;
+  }
 }
 
 .contacts__icon--phone {
-  right: 16px;
-  top: 16px;
+  right: 13px;
+  top: 12px;
+
+  @media (min-width: $tablet-width) {
+    right: 13px;
+    top: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 16px;
+    top: 16px;
+  }
 }
 
 .form__comment,
@@ -470,7 +490,11 @@
 }
 
 .form__other {
-  padding-top: 20px;
+  padding-top: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+  }
 }
 
 .other__list {
