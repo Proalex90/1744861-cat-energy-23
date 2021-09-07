@@ -90,7 +90,6 @@
                 type="number"
                 name="age"
                 id="age"
-                required
                 value="7"
               />
             </li>
@@ -190,7 +189,6 @@
               id="comment"
               cols="30"
               rows="10"
-              readonly
             >
 Расскажите обо всех повадках кота
             </textarea>
@@ -274,17 +272,19 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__content-wrapper">
+      <div class="footer__content-wrapper special__content-wrapper">
         <section class="footer__logo">
           <h3 class="visually-hidden">Логотип нашей компании</h3>
-          <svg
-            class="footer-logo__img"
-            width="101"
-            height="18"
-            aria-label="Логотип нашей компании"
-          >
-            <use xlink:href="img/socials.svg#logo-text"></use>
-          </svg>
+          <a class="footer-logo__link" href="index.html">
+            <svg
+              class="footer-logo__img"
+              width="101"
+              height="18"
+              aria-label="Логотип нашей компании"
+            >
+              <use xlink:href="img/socials.svg#logo-text"></use>
+            </svg>
+          </a>
         </section>
         <section class="footer__social socials">
           <h3 class="visually-hidden">Мы в социальных сетях</h3>
