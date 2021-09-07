@@ -2,8 +2,14 @@
   background-color: $basic-background;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 30px 61px;
+    min-height: 150px;
+    padding: 50px 30px;
     background-color: $basic-background;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    min-height: 120px;
   }
 }
 
@@ -15,9 +21,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 70px 110px;
+    padding: 26px 110px;
     margin: 0 auto;
     max-width: $desktop-width;
+  }
+}
+
+.special__content-wrapper {
+  @media (min-width: $desktop-width) {
+    padding: 61px 110px;
   }
 }
 
@@ -27,22 +39,43 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.footer-logo__link {
+  &:hover .footer-logo__img {
+    opacity: 0.8;
+  }
+
+  &:active .footer-logo__img {
+    opacity: 0.6;
   }
 }
 
 .footer-logo__img {
   width: 128px;
   height: 24px;
+  cursor: pointer;
 }
 
 .footer__social {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 33px;
+  }
 }
 
 .socials__list {
   border-top: 1px solid $color-border;
   border-bottom: 1px solid $color-border;
-  padding: 20px 20px;
+  padding: 12px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,11 +87,43 @@
 }
 
 .social__item {
-  margin-right: 36px;
+  margin-right: 13px;
 
   &:last-child {
     margin-right: 3px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 10px;
+  }
+}
+
+.social__link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover .social__icon use {
+    stroke: $basic-color;
+    fill: $basic-color;
+  }
+
+  &:active {
+    stroke: $basic-color;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 30px;
+  }
+}
+
+.social__icon {
+  fill: $color-social-stroke;
+  stroke: $color-social-stroke;
+  stroke-width: 0.4;
 }
 
 .social__icon--vk {
@@ -72,13 +137,15 @@
   @media (min-width: $tablet-width) {
     width: 23px;
     height: 23px;
+    stroke-width: 0.3;
   }
 }
 
 .social__icon--fb {
   @media (min-width: $tablet-width) {
     width: 28px;
-    height: 23px;
+    height: 33px;
+    stroke: $color-social-stroke;
   }
 }
 
@@ -93,12 +160,39 @@
   }
 }
 
+.copyright__logo {
+  margin-left: 22px;
+}
+
+.copyright__logo use {
+  fill: $color-social-stroke;
+  stroke-width: 0.5px;
+}
+
 .copyright__link {
   font-family: "Arial", sans-serif;
   font-size: 16px;
-  line-height: 18.4px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
   color: $color-form-text;
   text-decoration: none;
   text-transform: none;
-  margin-right: 22px;
+
+  &:hover .copyright__logo use {
+    stroke: $basic-color;
+    fill: $basic-color;
+  }
+
+  &:active .copyright__logo use {
+    stroke: $basic-color;
+    fill: $basic-color;
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

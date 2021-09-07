@@ -90,7 +90,6 @@
                 type="number"
                 name="age"
                 id="age"
-                required
                 value="7"
               />
             </li>
@@ -155,7 +154,6 @@
                 class="contacts__icon contacts__icon--email"
                 width="20"
                 height="15"
-                viewBox="0 0 20 15"
               >
                 <use xlink:href="img/form/icon-form.svg#icon-email"></use>
               </svg>
@@ -191,7 +189,6 @@
               id="comment"
               cols="30"
               rows="10"
-              readonly
             >
 Расскажите обо всех повадках кота
             </textarea>
@@ -269,45 +266,32 @@
               <p class="cooperation__text">Санкт-Петербург</p>
             </div>
           </section>
-          <picture>
-            <source
-              media="(min-width: 1440px)"
-              srcset="
-                img/index/location-desktop.jpg    1x,
-                img/index/location-desktop@2x.jpg 2x
-              "
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="
-                img/index/location-tablet.jpg    1x,
-                img/index/location-tablet@2x.jpg 2x
-              "
-            />
-            <img
-              src="img/index/location-mobile.jpg"
-              srcset="img/index/location-mobile@2x.jpg 2x"
-              alt="Наше местоположение на карте"
-              class="map__img"
-              width="320"
-              height="362"
-            />
-          </picture>
+          <iframe
+            class="map__location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1630795764479!5m2!1sru!2sru"
+            width="320"
+            height="352"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__content-wrapper">
+      <div class="footer__content-wrapper special__content-wrapper">
         <section class="footer__logo">
           <h3 class="visually-hidden">Логотип нашей компании</h3>
-          <svg
-            class="footer-logo__img"
-            width="101"
-            height="18"
-            aria-label="Логотип нашей компании"
-          >
-            <use xlink:href="img/socials.svg#logo-text"></use>
-          </svg>
+          <a class="footer-logo__link" href="index.html">
+            <svg
+              class="footer-logo__img"
+              width="101"
+              height="18"
+              aria-label="Логотип нашей компании"
+            >
+              <use xlink:href="img/socials.svg#logo-text"></use>
+            </svg>
+          </a>
         </section>
         <section class="footer__social socials">
           <h3 class="visually-hidden">Мы в социальных сетях</h3>
@@ -352,10 +336,14 @@
         </section>
         <section class="footer__copyright copyright">
           <h3 class="visually-hidden">Наша академия</h3>
-          <a href="#" class="copyright__link">HTML Academy</a>
-          <svg width="27" height="34">
-            <use xlink:href="img/socials.svg#icon-academy"></use>
-          </svg>
+          <a
+            href="https://htmlacademy.ru/intensive/adaptive"
+            class="copyright__link"
+            >HTML Academy
+            <svg class="copyright__logo" width="27" height="34">
+              <use xlink:href="img/socials.svg#icon-academy"></use>
+            </svg>
+          </a>
         </section>
       </div>
     </footer>

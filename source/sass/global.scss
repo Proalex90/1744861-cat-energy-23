@@ -52,6 +52,7 @@
   color: #ffffff;
   background-color: #68b738;
   border: none;
+  padding: 0 10px;
 
   &:hover {
     background-color: $basic-color2;
@@ -88,7 +89,7 @@
     &::after {
       content: "";
       display: block;
-      top: 20px;
+      top: 22px;
       height: 2px;
       position: absolute;
       background-color: #68b738;
