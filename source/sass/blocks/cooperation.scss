@@ -14,7 +14,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     left: 110px;
-    top: 64px;
+    top: 94px;
     padding: 63px 75px 58px;
     width: 570px;
     justify-content: space-between;
@@ -67,19 +67,5 @@
     flex-flow: column;
     align-items: flex-end;
     width: 170px;
-  }
-}
-
-.special-background {
-  background-color: $basic-background;
-  padding-top: 28px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 58px;
-    top: 100px;
   }
 }
