@@ -1,0 +1,91 @@
+.other__subtitle {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: none;
+  margin: 0 0 35px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 33px;
+    max-width: 100%;
+    padding-left: 0;
+  }
+}
+
+.other__list {
+  padding: 3px 20px 10px 66px;
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 30px 5px 16px 60px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 31px 14px 24px 60px;
+    justify-content: space-between;
+  }
+}
+
+.other__item {
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 39%;
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 15%;
+  }
+}
+
+.other__label {
+  display: flex;
+  align-items: center;
+
+  &:hover .other__check-box {
+    border: 1px solid $color-form-border;
+  }
+}
+
+.other__input-checkbox {
+  position: absolute;
+  appearance: none;
+}
+
+.other__check-box {
+  width: 30px;
+  height: 30px;
+  background-color: $color-textw;
+  border: 1px solid $color-border-special;
+  position: absolute;
+  margin-left: -46px;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    margin-left: -60px;
+  }
+}
+
+.other__input-checkbox:checked + .other__label .other__check-box {
+  background: url("../img/form/checkbox-active.svg") no-repeat center;
+
+  @media (min-width: $tablet-width) {
+    background-size: 36px 36px;
+  }
+}
+
+.other__input-checkbox:checked:disabled + .other__label .other__check-box,
+.other__input-checkbox:disabled + .other__label .other__check-box,
+.other__input-checkbox:disabled + .other__label {
+  opacity: 0.3;
+  cursor: default;
+}

@@ -1,0 +1,144 @@
+.contacts__subtitle {
+  width: 203px;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: none;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 75px;
+    max-width: 100%;
+    padding-left: 0;
+    width: max-content;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.contacts__label {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.contacts__list {
+  font-size: 16px;
+  padding: 18px 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.contacts__bag {
+  min-width: 50px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 70px;
+  }
+}
+
+.contacts__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: $color-form-text;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 47%;
+  }
+}
+
+.contacts__input {
+  font-size: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+  padding: 10px 40px 10px 15px;
+  margin: 0 auto 0 10px;
+  width: 100%;
+  border: 1px solid $color-border-input;
+  text-transform: uppercase;
+  color: $color-form-text;
+
+  &:focus + .contacts__icon use {
+    stroke: $basic-color;
+    fill: $basic-color;
+  }
+
+  &:hover {
+    outline: 1px solid $color-border-special;
+  }
+
+  &:focus {
+    outline: 2px solid $color-form-text;
+  }
+
+  &:required:invalid {
+    outline: 2px solid $color-arror-border;
+  }
+
+  &:required:invalid + .contacts__icon use {
+    stroke-width: 1.3px;
+    stroke: $color-arror-border;
+    fill: $color-arror-border;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 13px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 20px;
+  }
+}
+
+.contacts__icon {
+  fill: $color-form-text_dark;
+  position: absolute;
+  stroke: $color-form-text_dark;
+}
+
+.contacts__icon--email {
+  right: 15px;
+  top: 17px;
+
+  @media (min-width: $tablet-width) {
+    right: 14px;
+    top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 21px;
+    top: 19px;
+  }
+}
+
+.contacts__icon--phone {
+  right: 13px;
+  top: 12px;
+
+  @media (min-width: $tablet-width) {
+    right: 13px;
+    top: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 16px;
+    top: 16px;
+  }
+}
