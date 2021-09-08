@@ -42,6 +42,8 @@
 }
 
 .main__form {
+  padding-bottom: 25px;
+
   @media (min-width: $tablet-width) {
     padding: 0 70px;
   }
