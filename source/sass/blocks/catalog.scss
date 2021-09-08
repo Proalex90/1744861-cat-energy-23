@@ -137,6 +137,11 @@
   }
 }
 
+.catalog__subtitle-link {
+  text-decoration: none;
+  color: $color-form-text_dark;
+}
+
 .catalog__subtitle {
   text-align: left;
   font-weight: 400;
@@ -155,7 +160,7 @@
 
   @media (min-width: $desktop-width) {
     line-height: 21px;
-    margin: 41px auto auto;
+    margin: 41px auto auto 25px;
   }
 }
 
@@ -165,6 +170,7 @@
   font-size: 12px;
   line-height: 16px;
   text-transform: none;
+  color: $color-form-text;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -205,6 +211,10 @@
 
 .catalog__button {
   grid-column: 1/-1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
     margin: 13px 13px 0;
@@ -217,6 +227,8 @@
 }
 
 .catalog__button-more {
+  cursor: pointer;
+
   &:hover,
   &:active {
     background-color: $color-catalog-border;
@@ -228,6 +240,10 @@
   margin-top: 21px;
   background-color: $basic-background;
   color: $color-form-text;
+}
+
+.button-more__link {
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     align-self: flex-end;
@@ -358,9 +374,6 @@
     line-height: 36px;
     margin-bottom: 80px;
   }
-
-  /* @media (min-width: $desktop-width) {
-  } */
 }
 
 .additionally__list {
@@ -470,13 +483,19 @@
 }
 
 .additionally__button {
+  grid-column: 1/-1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
   @media (min-width: $desktop-width) {
     width: 245px;
   }
 }
 
 .gift {
-  padding: 0 20px 12px;
+  padding: 0 20px 38px;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
