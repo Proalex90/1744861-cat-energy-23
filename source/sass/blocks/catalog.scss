@@ -142,7 +142,7 @@
   color: $color-form-text_dark;
 }
 
-.catalog__subtitle {
+.container-price__subtitle {
   text-align: left;
   font-weight: 400;
   font-size: 16px;
@@ -164,7 +164,7 @@
   }
 }
 
-.catalog__text {
+.container-price__text {
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -240,10 +240,6 @@
   margin-top: 21px;
   background-color: $basic-background;
   color: $color-form-text;
-}
-
-.button-more__link {
-  width: 100%;
 
   @media (min-width: $tablet-width) {
     align-self: flex-end;
@@ -302,7 +298,7 @@
   }
 }
 
-.subtitle__container {
+.additionally__subtitle-container {
   display: flex;
   align-items: baseline;
 
