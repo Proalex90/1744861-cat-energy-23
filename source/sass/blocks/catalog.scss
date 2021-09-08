@@ -1,4 +1,4 @@
-.main__catalog {
+.page-catalog__catalog {
   @media (min-width: $tablet-width) {
     padding: 30px 30px;
     max-width: $tablet-width;
@@ -137,7 +137,7 @@
   }
 }
 
-.catalog__subtitle-link {
+.container-price__subtitle-link {
   text-decoration: none;
   color: $color-form-text_dark;
 }

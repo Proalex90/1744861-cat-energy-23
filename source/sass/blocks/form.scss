@@ -1,4 +1,4 @@
-.main-title__container {
+.page-form__title-container {
   @media (min-width: $desktop-width) {
     max-width: $desktop-width;
     width: 100%;
@@ -6,7 +6,7 @@
   }
 }
 
-.main__title {
+.page-form__title {
   width: 100%;
   font-size: 36px;
   font-weight: 400;
@@ -25,7 +25,7 @@
   }
 }
 
-.main__text {
+.page-form__text {
   padding: 28px 20px 10px;
 
   @media (min-width: $tablet-width) {
@@ -41,7 +41,7 @@
   }
 }
 
-.main__form {
+.page-form__form {
   padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
@@ -225,7 +225,7 @@
   }
 }
 
-.form__taget-label {
+.taget__label {
   display: flex;
   align-items: center;
 
@@ -234,7 +234,7 @@
   }
 }
 
-.form__input-radio {
+.taget__input-radio {
   position: absolute;
   appearance: none;
 }
@@ -256,13 +256,13 @@
   }
 }
 
-.form__input-radio:checked + .form__taget-label .taget__radio {
+.taget__input-radio:checked + .taget__label .taget__radio {
   background-color: $basic-color;
 }
 
-.form__input-radio:checked:disabled + .form__taget-label .taget__radio,
-.form__input-radio:disabled + .form__taget-label .taget__radio,
-.form__input-radio:disabled + .form__taget-label {
+.taget__input-radio:checked:disabled + .taget__label .taget__radio,
+.taget__input-radio:disabled + .taget__label .taget__radio,
+.taget__input-radio:disabled + .taget__label {
   opacity: 0.3;
   cursor: default;
 }
@@ -575,7 +575,7 @@
   cursor: default;
 }
 
-.submit__container {
+.form__submit-container {
   padding: 5px 20px;
 
   @media (min-width: $tablet-width) {
@@ -588,7 +588,7 @@
   }
 }
 
-.button__submit {
+.form__button-submit {
   display: block;
 
   @media (min-width: $tablet-width) {

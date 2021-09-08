@@ -27,13 +27,13 @@
   }
 }
 
-.special__content-wrapper {
+.footer__content-wrapper--special {
   @media (min-width: $desktop-width) {
     padding: 61px 110px;
   }
 }
 
-.footer__logo {
+.footer-logo {
   padding: 39px 20px 28px;
   text-align: center;
 
@@ -72,7 +72,7 @@
   }
 }
 
-.socials__list {
+.social__list {
   border-top: 1px solid $color-border;
   border-bottom: 1px solid $color-border;
   padding: 12px 20px;
