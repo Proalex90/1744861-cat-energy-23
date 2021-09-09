@@ -72,7 +72,8 @@
   padding: 10px 40px 10px 15px;
   margin: 0 auto 0 10px;
   width: 100%;
-  border: 1px solid $color-border-input;
+  outline: 1px solid $color-border-input;
+  border: none;
   text-transform: uppercase;
   color: $color-form-text;
 
@@ -81,7 +82,15 @@
     fill: $basic-color;
   }
 
+  &:required:invalid:placeholder-shown {
+    outline: 1px solid $color-border-input;
+  }
+
   &:hover {
+    outline: 1px solid $color-border-special;
+  }
+
+  &:hover:required:invalid {
     outline: 1px solid $color-border-special;
   }
 
@@ -89,18 +98,14 @@
     outline: 2px solid $color-form-text;
   }
 
-  &:required:invalid:placeholder-shown {
-    outline: 1px solid $color-border-input;
-  }
-
   &:focus:required:invalid {
-    outline: 2px solid $color-arror-border;
+    outline: 2px solid $color-error-border;
   }
 
   &:focus:required:invalid + .contacts__icon use {
     stroke-width: 1.3px;
-    stroke: $color-arror-border;
-    fill: $color-arror-border;
+    stroke: $color-error-border;
+    fill: $color-error-border;
   }
 
   @media (min-width: $tablet-width) {

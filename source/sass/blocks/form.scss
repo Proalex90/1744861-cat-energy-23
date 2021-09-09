@@ -79,7 +79,8 @@
 .form__input-text,
 .form__input-number {
   color: $color-form-text;
-  border: 1px solid $color-border-input;
+  outline: 1px solid $color-border-input;
+  border: none;
   font-size: 16px;
   line-height: 18px;
   padding: 12px;
@@ -87,7 +88,15 @@
   width: 100%;
   font-family: "Oswald", "Arial", sans-serif;
 
+  &:required:invalid:placeholder-shown {
+    outline: 1px solid $color-border-input;
+  }
+
   &:hover {
+    outline: 1px solid $color-border-special;
+  }
+
+  &:hover:required:invalid {
     outline: 1px solid $color-border-special;
   }
 
@@ -95,12 +104,9 @@
     outline: 2px solid $color-form-text;
   }
 
-  &:required:invalid:placeholder-shown {
-    outline: 1px solid $color-border-input;
-  }
 
   &:focus:required:invalid {
-    outline: 2px solid $color-arror-border;
+    outline: 2px solid $color-error-border;
   }
 
   @media (min-width: $tablet-width) {
@@ -118,11 +124,6 @@
 
 .form__input-number {
   padding-left: 16px;
-
-  &::-webkit-outer-spin-button,
-  &::-webkit-inner-spin-button {
-    appearance: none;
-  }
 }
 
 .form__taget {
