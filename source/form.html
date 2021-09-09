@@ -9,7 +9,7 @@
   <body class="page">
     <header class="header">
       <div class="header__wrapper">
-        <a class="logo__link" href="index.html">
+        <a class="logo" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" />
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
@@ -39,13 +39,13 @@
             </li>
           </ul>
         </nav>
-        <button class="menu__toggle"></button>
+        <button class="mobile-menu"></button>
       </div>
     </header>
-    <main class="main">
-      <div class="main-title__container">
-        <h1 class="main__title">Подбор программы</h1>
-        <p class="main__text">
+    <main class="page-form">
+      <div class="page-form__title-container">
+        <h1 class="page-form__title">Подбор программы</h1>
+        <p class="page-form__text">
           Заполните анкету, и мы подберем<br />
           программу питания для вашего кота
         </p>
@@ -53,7 +53,7 @@
       <form
         method="GET"
         action="https://echo.htmlacademy.ru"
-        class="main__form form"
+        class="page-form__form form"
       >
         <fieldset class="form__name">
           <ul class="form__name-list">
@@ -65,7 +65,7 @@
                 name="name"
                 id="name"
                 required
-                value="БАРСИК"
+                placeholder="БАРСИК"
               />
             </li>
             <li class="form__name-item">
@@ -78,7 +78,7 @@
                 name="weight"
                 id="weight"
                 required
-                value="7"
+                placeholder="7"
               />
             </li>
             <li class="form__name-item">
@@ -90,50 +90,50 @@
                 type="number"
                 name="age"
                 id="age"
-                value="7"
+                placeholder="7"
               />
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__taget">
+        <fieldset class="form__taget taget">
           <ul class="taget__list">
             <li class="taget__item">
               <input
-                class="form__input-radio"
+                class="taget__input-radio"
                 type="radio"
                 name="taget"
                 id="fit"
                 checked
               />
-              <label class="form__taget-label" for="fit"
+              <label class="taget__label" for="fit"
                 ><span class="taget__radio"></span>Похудение
               </label>
             </li>
             <li class="taget__item">
               <input
-                class="form__input-radio"
+                class="taget__input-radio"
                 type="radio"
                 name="taget"
                 id="pro"
               />
-              <label class="form__taget-label" for="pro"
+              <label class="taget__label" for="pro"
                 ><span class="taget__radio"></span>Набор массы
               </label>
             </li>
             <li class="taget__item">
               <input
-                class="form__input-radio"
+                class="taget__input-radio"
                 type="radio"
                 name="taget"
                 id="advice"
               />
-              <label class="form__taget-label" for="advice"
+              <label class="taget__label" for="advice"
                 ><span class="taget__radio"></span>Не знаю (Нужен ваш совет)
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__contacts">
+        <fieldset class="form__contacts contacts">
           <h2 class="contacts__subtitle decoration-line">
             Контактные данные (владельца кота)
           </h2>
@@ -147,7 +147,7 @@
                 type="email"
                 name="email"
                 id="email"
-                value="kuklachev@gmail.com"
+                placeholder="kuklachev@gmail.com"
                 required
               />
               <svg
@@ -165,7 +165,7 @@
                 type="tel"
                 name="tel"
                 id="tel"
-                value="8 (960) 900-60-90"
+                placeholder="8 (960) 900-60-90"
                 required
               />
               <svg
@@ -180,7 +180,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__comment">
+        <fieldset class="form__comment comment">
           <h2 class="comment__subtitle decoration-line">Комментарий</h2>
           <div class="comment__wrapper">
             <textarea
@@ -189,9 +189,8 @@
               id="comment"
               cols="30"
               rows="10"
-            >
-Расскажите обо всех повадках кота
-            </textarea>
+              placeholder="Расскажите обо всех повадках кота"
+            ></textarea>
           </div>
         </fieldset>
         <fieldset class="form__other other">
@@ -244,9 +243,9 @@
             </li>
           </ul>
         </fieldset>
-        <div class="submit__container">
+        <div class="form__submit-container">
           <input
-            class="button button__submit"
+            class="button form__button-submit"
             type="submit"
             value="Отправить заявку"
           />
@@ -279,8 +278,8 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__content-wrapper special__content-wrapper">
-        <section class="footer__logo">
+      <div class="footer__content-wrapper footer__content-wrapper--special">
+        <section class="footer-logo">
           <h3 class="visually-hidden">Логотип нашей компании</h3>
           <a class="footer-logo__link" href="index.html">
             <svg
@@ -293,9 +292,9 @@
             </svg>
           </a>
         </section>
-        <section class="footer__social socials">
+        <section class="footer__social social">
           <h3 class="visually-hidden">Мы в социальных сетях</h3>
-          <ul class="socials__list">
+          <ul class="social__list">
             <li class="social__item">
               <a href="" class="social__link"
                 ><svg

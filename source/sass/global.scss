@@ -1,22 +1,14 @@
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
-    url("../fonts/oswaldmedium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/oswaldregular.woff2") format("woff2"),
-    url("../fonts/oswaldregular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
 .html,
 .page {
   overflow-x: hidden;
+}
+
+.page {
+  font-family: "Oswald", "Arial", "Verdana", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 
 *,
@@ -43,7 +35,7 @@
 
 .button {
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", "Verdana", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -104,5 +96,39 @@
       width: 100vw;
       left: calc(100% + 40px);
     }
+  }
+}
+
+.plus {
+  width: 30px;
+  height: 2px;
+  background-color: #d3d3d3;
+  margin: 17px auto 37px;
+
+  &::before {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+    transform: rotate(90deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    margin: 17px auto 27px;
+
+    &::before {
+      width: 60px;
+    }
+  }
+}
+
+.special-background {
+  background-color: $basic-background;
+
+  @media (min-width: $desktop-width) {
+    background-color: $color-textw;
   }
 }

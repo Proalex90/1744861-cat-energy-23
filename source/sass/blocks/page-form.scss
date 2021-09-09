@@ -1,0 +1,58 @@
+.page-form__title-container {
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.page-form__title {
+  width: 100%;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  padding: 27px 20px 10px;
+  text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 30px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 68px 110px 32px;
+  }
+}
+
+.page-form__text {
+  padding: 28px 20px 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 70%;
+    margin-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}
+
+.page-form__form {
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 110px;
+  }
+}

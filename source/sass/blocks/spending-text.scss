@@ -1,0 +1,12 @@
+.spending-text__price {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    margin-top: 4px;
+    margin-left: 59px;
+  }
+}

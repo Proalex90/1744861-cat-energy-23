@@ -1,0 +1,72 @@
+.taget__list {
+  padding: 27px 20px 24px 46px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 30px 30px 88px;
+    font-size: 20px;
+    line-height: 30px;
+    border: 1px solid $color-border-input;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 110px;
+  }
+}
+
+.taget__item {
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+  }
+}
+
+.taget__label {
+  display: flex;
+  align-items: center;
+
+  &:hover .taget__radio {
+    box-shadow: 0 0 0 1px $color-form-border;
+  }
+}
+
+.taget__input-radio {
+  position: absolute;
+  appearance: none;
+}
+
+.taget__radio {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 8px solid $color-textw;
+  box-shadow: 0 0 0 1px $color-border-special;
+  margin-left: -46px;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    border: 11px solid $color-textw;
+    margin-left: -60px;
+  }
+}
+
+.taget__input-radio:checked + .taget__label .taget__radio {
+  background-color: $basic-color;
+}
+
+.taget__input-radio:checked:disabled + .taget__label .taget__radio,
+.taget__input-radio:disabled + .taget__label .taget__radio,
+.taget__input-radio:disabled + .taget__label {
+  opacity: 0.3;
+  cursor: default;
+}
