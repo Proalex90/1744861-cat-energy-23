@@ -89,11 +89,15 @@
     outline: 2px solid $color-form-text;
   }
 
-  &:required:invalid {
+  &:required:invalid:placeholder-shown {
+    outline: 1px solid $color-border-input;
+  }
+
+  &:focus:required:invalid {
     outline: 2px solid $color-arror-border;
   }
 
-  &:required:invalid + .contacts__icon use {
+  &:focus:required:invalid + .contacts__icon use {
     stroke-width: 1.3px;
     stroke: $color-arror-border;
     fill: $color-arror-border;

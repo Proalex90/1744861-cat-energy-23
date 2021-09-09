@@ -33,6 +33,19 @@
   overflow: hidden;
 }
 
+.mobile-menu {
+  background-color: $color-textw;
+  border: none;
+  order: 3;
+  transform: translateY(-8px);
+  min-height: 65px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .button {
   text-transform: uppercase;
   font-family: "Oswald", "Arial", "Verdana", sans-serif;
