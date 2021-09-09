@@ -95,7 +95,11 @@
     outline: 2px solid $color-form-text;
   }
 
-  &:required:invalid {
+  &:required:invalid:placeholder-shown {
+    outline: 1px solid $color-border-input;
+  }
+
+  &:focus:required:invalid {
     outline: 2px solid $color-arror-border;
   }
 
@@ -114,6 +118,11 @@
 
 .form__input-number {
   padding-left: 16px;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+  }
 }
 
 .form__taget {
