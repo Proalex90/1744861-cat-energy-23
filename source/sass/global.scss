@@ -33,6 +33,16 @@
   overflow: hidden;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .mobile-menu {
   background-color: $color-textw;
   border: none;
