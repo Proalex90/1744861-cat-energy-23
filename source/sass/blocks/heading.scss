@@ -10,7 +10,8 @@
     position: absolute;
     top: 0;
 
-    background: url("../img/index/index-background-mobile.jpg") no-repeat center;
+    background: url("../img/index/index-background-mobile.jpg") no-repeat center,
+      $basic-color;
     background-size: cover;
     min-height: 302px;
     display: block;
@@ -19,7 +20,8 @@
 
     @media (min-resolution: 2dppx) {
       background: url("../img/index/index-background-mobile@2x.jpg") no-repeat
-        center;
+          center,
+        $basic-color;
       background-size: cover;
       min-height: 302px;
       display: block;
