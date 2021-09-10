@@ -3,6 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="preload"
+      href="fonts/oswaldregular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="stylesheet" href="css/style.min.css" />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
@@ -220,8 +227,35 @@
               <li class="example__before-after-item">
                 <picture>
                   <source
+                    type="image/webp"
                     media="(min-width: 1440px)"
-                    srcset="img/index/example-cat-desktop.png"
+                    srcset="
+                      img/index/example-cat-desktop.webp,
+                      img/index/example-cat-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/index/example-cat-tablet.webp,
+                      img/index/example-cat-tablet@2x.webp 2x
+                    "
+                  />
+
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/index/before-mobile.webp,
+                      img/index/before-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      img/index/example-cat-desktop.png,
+                      img/index/example-cat-desktop@2x.png
+                    "
                   />
                   <source
                     media="(min-width: 768px)"
@@ -233,6 +267,7 @@
                   <img
                     class="example__before-after-img"
                     src="img/index/before-mobile.png"
+                    srcset="img/index/before-mobile@2x.png 2x"
                     alt="Жирный кот =)"
                     width="311"
                     height="232"
@@ -290,7 +325,12 @@
       <div class="footer__content-wrapper">
         <section class="footer-logo">
           <h3 class="visually-hidden">Логотип нашей компании</h3>
-          <a class="footer-logo__link" href="index.html">
+          <a
+            class="footer-logo__link"
+            href="index.html"
+            title="Перейти на гланую"
+            aria-label="Перейти на главную"
+          >
             <svg
               class="footer-logo__img"
               width="101"
@@ -305,7 +345,11 @@
           <h3 class="visually-hidden">Мы в социальных сетях</h3>
           <ul class="social__list">
             <li class="social__item">
-              <a href="" class="social__link"
+              <a
+                href=""
+                class="social__link"
+                title="Наш профиль ВКонтакте"
+                aria-label="Перейти в наш профиль ВКонтакте"
                 ><svg
                   class="social__icon social__icon--vk"
                   width="23"
@@ -316,7 +360,11 @@
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="social__link"
+              <a
+                href=""
+                class="social__link"
+                title="Наш профиль в Инстаграм"
+                aria-label="Перейти в наш профиль в Инстаграм"
                 ><svg
                   class="social__icon social__icon--inst"
                   width="16"
@@ -327,7 +375,11 @@
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="social__link"
+              <a
+                href=""
+                class="social__link"
+                title="Наш профиль в Фейсбук"
+                aria-label="Перейти в наш профиль в Фейсбук"
                 ><svg
                   class="social__icon social__icon--fb"
                   width="22"
@@ -343,6 +395,8 @@
           <h3 class="visually-hidden">Наша академия</h3>
           <a
             href="https://htmlacademy.ru/intensive/adaptive"
+            title="Наша любимая HTML академия"
+            aria-label="Перейти на страницу курса HTML академии"
             class="copyright__link"
             >HTML Academy
             <svg class="copyright__logo" width="27" height="34">

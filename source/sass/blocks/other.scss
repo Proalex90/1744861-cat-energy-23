@@ -54,6 +54,8 @@
 .other__label {
   display: flex;
   align-items: center;
+  width: max-content;
+  padding: 0 2px;
 
   &:hover .other__check-box {
     border: 1px solid $color-form-border;
@@ -63,6 +65,11 @@
 .other__input-checkbox {
   position: absolute;
   appearance: none;
+
+  &:focus ~ .other__label {
+    box-shadow: 0 0 0 2px $color-form-text_dark;
+    border-radius: 3px;
+  }
 }
 
 .other__check-box {
