@@ -11,23 +11,12 @@
   text-transform: uppercase;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.page ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 *,
 *::before,
 *::after {
-  /*   margin: 0;
+  margin: 0;
   padding: 0;
-  list-style: none; */
+  list-style: none;
   box-sizing: border-box;
 }
 
